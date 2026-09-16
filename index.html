@@ -6,141 +6,157 @@
 <title>Formulario KYC | eFactor Network</title>
 
 <style>
-    * {
-        box-sizing: border-box;
-    }
+* {
+    box-sizing: border-box;
+}
 
-    body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        background: #f3f5f7;
-        color: #263238;
-    }
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f5f7;
+    color: #263238;
+}
 
-    header {
-        background: #173b57;
-        color: white;
-        padding: 28px 20px;
-        text-align: center;
-    }
+header {
+    background: #173b57;
+    color: white;
+    padding: 28px 20px;
+    text-align: center;
+}
 
-    header h1 {
-        margin: 0 0 8px;
-        font-size: 25px;
-    }
+header h1 {
+    margin: 0 0 8px;
+    font-size: 25px;
+}
 
-    header p {
-        margin: 0;
-        font-size: 14px;
-        opacity: 0.9;
-    }
+header p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
 
-    .container {
-        max-width: 1050px;
-        margin: 30px auto;
-        padding: 0 20px 50px;
-    }
+.container {
+    max-width: 1050px;
+    margin: 30px auto;
+    padding: 0 20px 50px;
+}
 
-    .intro {
-        background: white;
-        padding: 20px 25px;
-        border-radius: 8px;
-        margin-bottom: 20px;
-        border-left: 5px solid #2c7da0;
-    }
+.intro {
+    background: white;
+    padding: 20px 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 5px solid #2c7da0;
+}
 
-    .section {
-        background: white;
-        margin-bottom: 22px;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        position: relative;
-    }
+.section {
+    background: white;
+    margin-bottom: 22px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    position: relative;
+}
 
-    .section-title {
-        background: #e9f0f4;
-        color: #173b57;
-        padding: 15px 20px;
-        font-size: 17px;
-        font-weight: bold;
-        border-bottom: 1px solid #d5e0e6;
-    }
+.section-title {
+    background: #e9f0f4;
+    color: #173b57;
+    padding: 15px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    border-bottom: 1px solid #d5e0e6;
+}
 
-    .section-content {
-        padding: 22px;
-    }
+.section-content {
+    padding: 22px;
+}
 
-    .section-content-2 {
-        padding: 15px;
-        font-size: 14px;
-        font-weight: normal;
-    }
+.section-content-2 {
+    padding: 15px;
+    font-size: 14px;
+}
 
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 17px;
-    }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 17px;
+}
 
-    .grid-3 {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 17px;
-    }
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 17px;
+}
 
-    .full {
-        grid-column: 1 / -1;
-    }
+.full {
+    grid-column: 1 / -1;
+}
 
-    label {
-        display: block;
-        font-weight: bold;
-        font-size: 13px;
-        margin-bottom: 6px;
-        color: #37474f;
-    }
+.owner-full-width {
+    grid-column: 1 / -1;
+}
 
-    input,
-    select,
-    textarea {
-        width: 100%;
-        padding: 10px 11px;
-        border: 1px solid #cbd5da;
-        border-radius: 5px;
-        font-size: 14px;
-        font-family: inherit;
-    }
+.owner {
+    border: 1px solid #d6e0e5;
+    border-radius: 6px;
+    padding: 17px;
+    margin-bottom: 15px;
+    background: #fafcfd;
+}
 
-    input:focus,
-    select:focus,
-    textarea:focus {
-        outline: none;
-        border-color: #2c7da0;
-        box-shadow: 0 0 0 2px rgba(44,125,160,0.12);
-    }
+.owner h4 {
+    margin: 0 0 15px;
+    color: #173b57;
+}
 
-    textarea {
-        min-height: 75px;
-        resize: vertical;
-    }
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 6px;
+    color: #37474f;
+}
 
-    .checkbox-group {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 18px;
-        margin-top: 8px;
-    }
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px 11px;
+    border: 1px solid #cbd5da;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: inherit;
+}
 
-    .checkbox-group label {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        font-weight: normal;
-    }
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2c7da0;
+    box-shadow: 0 0 0 2px rgba(44,125,160,0.12);
+}
 
-    .checkbox-group input {
-        width: auto;
-    }
+textarea {
+    min-height: 75px;
+    resize: vertical;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 8px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+}
+
+.checkbox-group input {
+    width: auto;
+}
 
 .phone-group {
     display: grid;
@@ -148,308 +164,290 @@
     gap: 8px;
 }
 
-@media (min-width: 851px) {
-    .owner-full-width {
-        grid-column: 1 / -1;
+.button-area {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+button {
+    border: none;
+    border-radius: 6px;
+    padding: 14px 24px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.light {
+    background: #e5eaed;
+    color: #263238;
+}
+
+.light:hover {
+    background: #d6dde1;
+}
+
+.send-button {
+    background: #2e7d32;
+    color: white;
+}
+
+.send-button:hover {
+    background: #256b2a;
+}
+
+.send-button:disabled {
+    background: #9e9e9e;
+    cursor: not-allowed;
+}
+
+.required {
+    color: #c62828;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.notice {
+    font-size: 12px;
+    color: #607d8b;
+    margin-top: 8px;
+}
+
+/* TEXTOS LEGALES */
+
+details.legal-details {
+    background: #f7f9fa;
+    border: 1px solid #d6e0e5;
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin: 10px 0 18px;
+    font-size: 12.5px;
+    color: #374151;
+    line-height: 1.6;
+}
+
+details.legal-details summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #173b57;
+    list-style: none;
+}
+
+details.legal-details summary::-webkit-details-marker {
+    display: none;
+}
+
+details.legal-details summary::before {
+    content: "▸ ";
+}
+
+details.legal-details[open] summary::before {
+    content: "▾ ";
+}
+
+details.legal-details p {
+    margin: 10px 0 0;
+}
+
+details.legal-details ol {
+    margin: 10px 0 0;
+    padding-left: 20px;
+}
+
+details.legal-details ol > li {
+    margin-bottom: 10px;
+}
+
+details.legal-details ul {
+    margin: 6px 0 0;
+    padding-left: 18px;
+}
+
+details.legal-details ul > li {
+    margin-bottom: 4px;
+}
+
+details.legal-details .source-note {
+    display: block;
+    margin-top: 12px;
+    font-size: 11.5px;
+    color: #607d8b;
+}
+
+/* TOOLTIP */
+
+.info-icon {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 6px;
+    color: #6b7280;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: normal;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    user-select: none;
+}
+
+.info-icon:hover {
+    color: #374151;
+}
+
+.tooltip {
+    visibility: hidden;
+    opacity: 0;
+
+    position: absolute;
+    z-index: 1000;
+
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 290px;
+    max-width: 85vw;
+
+    padding: 11px 13px;
+
+    background: #ffffff;
+    color: #374151;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 7px;
+
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
+
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: left;
+
+    pointer-events: none;
+
+    transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.tooltip.tooltip-large {
+    width: 700px;
+    max-width: 80vw;
+    max-height: 500px;
+    overflow-y: auto;
+
+    padding: 16px 18px;
+
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.info-icon:hover .tooltip,
+.info-icon.active .tooltip {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(-2px);
+    pointer-events: auto;
+}
+
+/* En móvil, el tooltip se adapta a la pantalla y puede desplazarse */
+
+@media (max-width: 700px) {
+
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+        margin-top: 18px;
     }
 
-    .owner {
-        border: 1px solid #d6e0e5;
-        border-radius: 6px;
+    .section-content {
         padding: 17px;
-        margin-bottom: 15px;
-        background: #fafcfd;
     }
 
-    .owner h4 {
-        margin: 0 0 15px;
-        color: #173b57;
+    .grid,
+    .grid-3 {
+        grid-template-columns: 1fr;
     }
 
-    .button-area {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        flex-wrap: wrap;
-        margin-top: 30px;
+    .full,
+    .owner-full-width {
+        grid-column: auto;
     }
 
-    button {
-        border: none;
-        border-radius: 6px;
-        padding: 14px 24px;
-        font-size: 15px;
-        font-weight: bold;
-        cursor: pointer;
+    .phone-group {
+        grid-template-columns: 115px 1fr;
     }
 
-    .primary {
-        background: #173b57;
-        color: white;
-    }
-
-    .primary:hover {
-        background: #245777;
-    }
-
-    .secondary {
-        background: #2c7da0;
-        color: white;
-    }
-
-    .secondary:hover {
-        background: #236782;
-    }
-
-    .light {
-        background: #e5eaed;
-        color: #263238;
-    }
-
-    .light:hover {
-        background: #d6dde1;
-    }
-
-    /* BOTÓN ENVIAR */
-
-    .send-button {
-        background: #2e7d32;
-        color: white;
-    }
-
-    .send-button:hover {
-        background: #256b2a;
-    }
-
-    .send-button:disabled {
-        background: #9e9e9e;
-        cursor: not-allowed;
-    }
-
-    .required {
-        color: #c62828;
-    }
-
-    .hidden {
-        display: none;
-    }
-
-    .notice {
-        font-size: 12px;
-        color: #607d8b;
-        margin-top: 8px;
-    }
-
-
-    /* TEXTOS LEGALES DESPLEGABLES */
-
-    details.legal-details {
-        background: #f7f9fa;
-        border: 1px solid #d6e0e5;
-        border-radius: 6px;
-        padding: 10px 14px;
-        margin: 10px 0 18px;
-        font-size: 12.5px;
-        color: #374151;
-        line-height: 1.6;
-    }
-
-    details.legal-details summary {
-        cursor: pointer;
-        font-weight: bold;
-        color: #173b57;
-        list-style: none;
-    }
-
-    details.legal-details summary::-webkit-details-marker {
-        display: none;
-    }
-
-    details.legal-details summary::before {
-        content: "▸ ";
-    }
-
-    details.legal-details[open] summary::before {
-        content: "▾ ";
-    }
-
-    details.legal-details p {
-        margin: 10px 0 0;
-    }
-
-    details.legal-details ol {
-        margin: 10px 0 0;
-        padding-left: 20px;
-    }
-
-    details.legal-details ol > li {
-        margin-bottom: 10px;
-    }
-
-    details.legal-details ul {
-        margin: 6px 0 0;
-        padding-left: 18px;
-    }
-
-    details.legal-details ul > li {
-        margin-bottom: 4px;
-    }
-
-    details.legal-details .source-note {
-        display: block;
-        margin-top: 12px;
-        font-size: 11.5px;
-        color: #607d8b;
-    }
-
-
-    /* TOOLTIP INFORMATIVO */
-
-    .info-icon {
-        position: relative;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: 6px;
-        color: #6b7280;
-        cursor: help;
-        font-size: 15px;
-        font-weight: normal;
-        vertical-align: middle;
-    }
-
-    .info-icon:hover {
-        color: #374151;
-    }
-
-    .tooltip {
-        visibility: hidden;
-        opacity: 0;
-
-        position: absolute;
-        z-index: 1000;
-
-        bottom: calc(100% + 10px);
-        left: 50%;
-        transform: translateX(-50%);
-
-        width: 290px;
-        max-width: 85vw;
-
-        padding: 11px 13px;
-
-        background: #ffffff;
-        color: #374151;
-
-        border: 1px solid #e5e7eb;
-        border-radius: 7px;
-
-        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
-
-        font-size: 12px;
-        font-weight: normal;
-        line-height: 1.5;
-        text-align: left;
-
-        pointer-events: none;
-
-        transition: opacity 0.18s ease, transform 0.18s ease;
-    }
-
+    .tooltip,
     .tooltip.tooltip-large {
-        width: 700px;
-        max-width: 80vw;
-        max-height: 500px;
+        position: fixed;
+
+        width: calc(100vw - 30px);
+        max-width: calc(100vw - 30px);
+
+        max-height: 60vh;
         overflow-y: auto;
 
-        padding: 16px 18px;
+        left: 15px;
+        bottom: auto;
 
-        font-size: 12px;
-        line-height: 1.6;
-        white-space: normal;
-    }
+        padding: 14px 16px;
 
-    .tooltip::after {
-        content: "";
+        transform: none;
 
-        position: absolute;
-
-        top: 100%;
-        left: 50%;
-
-        transform: translateX(-50%);
-
-        border-width: 6px;
-        border-style: solid;
-        border-color: #ffffff transparent transparent transparent;
-    }
-
-    .tooltip::before {
-        content: "";
-
-        position: absolute;
-
-        top: calc(100% + 1px);
-        left: 50%;
-
-        transform: translateX(-50%);
-
-        border-width: 7px;
-        border-style: solid;
-        border-color: #e5e7eb transparent transparent transparent;
-
-        z-index: -1;
+        -webkit-overflow-scrolling: touch;
     }
 
     .info-icon:hover .tooltip {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .info-icon.active .tooltip {
         visibility: visible;
         opacity: 1;
-
-        transform: translateX(-50%) translateY(-2px);
+        transform: none;
+        pointer-events: auto;
     }
 
-
-    @media (max-width: 700px) {
-
-        .grid,
-        .grid-3 {
-            grid-template-columns: 1fr;
-        }
-
-        .full {
-            grid-column: auto;
-        }
-
-        .tooltip.tooltip-large {
-            width: 90vw;
-            max-width: 90vw;
-        }
+    .owner {
+        padding: 14px;
     }
 
-
-    @media print {
-
-        body {
-            background: white;
-        }
-
-        header {
-            print-color-adjust: exact;
-            -webkit-print-color-adjust: exact;
-        }
-
-        .button-area,
-        button {
-            display: none !important;
-        }
-
-        .section {
-            box-shadow: none;
-            break-inside: avoid;
-        }
-
+    .button-area {
+        margin-top: 25px;
     }
 
+    .send-button {
+        width: 100%;
+    }
+}
+
+@media print {
+
+    body {
+        background: white;
+    }
+
+    header {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+
+    .button-area,
+    button {
+        display: none !important;
+    }
+
+    .section {
+        box-shadow: none;
+        break-inside: avoid;
+    }
+}
 </style>
 </head>
 
@@ -472,7 +470,7 @@
 
     <form id="kycForm">
 
-        <!-- DATOS GENERALES -->
+        <!-- 1. DATOS GENERALES -->
 
         <div class="section">
 
@@ -488,30 +486,17 @@
                         <label>
                             Razón Social <span class="required">*</span>
                         </label>
-
-                        <input
-                            type="text"
-                            name="razon_social"
-                            required
-                        >
+                        <input type="text" name="razon_social" required>
                     </div>
 
                     <div>
                         <label>N.º de Proveedor</label>
-
-                        <input
-                            type="text"
-                            name="numero_proveedor"
-                        >
+                        <input type="text" name="numero_proveedor">
                     </div>
 
                     <div>
                         <label>Fecha de Constitución</label>
-
-                        <input
-                            type="date"
-                            name="fecha_constitucion"
-                        >
+                        <input type="date" name="fecha_constitucion">
                     </div>
 
                     <div>
@@ -519,144 +504,81 @@
                             RFC / RUC / RUT / Tax ID
                             <span class="required">*</span>
                         </label>
-
-                        <input
-                            type="text"
-                            name="rfc"
-                            required
-                        >
+                        <input type="text" name="rfc" required>
                     </div>
 
                     <div>
-
                         <label>
                             Tipo de empresa
-
-                            <span class="info-icon">
+                            <span class="info-icon" tabindex="0" aria-label="Información">
                                 ⓘ
-
                                 <span class="tooltip">
                                     Se consideran como nacionales apenas las empresas de México. Las demás son consideradas extranjeras.
                                 </span>
-
                             </span>
                         </label>
 
                         <select name="tipo_empresa">
-
                             <option value="">Seleccione</option>
                             <option>Nacional</option>
                             <option>Extranjera</option>
-
                         </select>
-
                     </div>
 
                     <div>
-
                         <label>Nacionalidad</label>
-
-                        <input
-                            type="text"
-                            name="nacionalidad_empresa"
-                        >
-
+                        <input type="text" name="nacionalidad_empresa">
                     </div>
 
                     <div class="full">
-
                         <label>Calle y número</label>
-
-                        <input
-                            type="text"
-                            name="calle_empresa"
-                        >
-
+                        <input type="text" name="calle_empresa">
                     </div>
 
                     <div>
-
-                        <label>
-                            Colonia / Distrito / Comuna
-                        </label>
-
-                        <input
-                            type="text"
-                            name="colonia_empresa"
-                        >
-
+                        <label>Colonia / Distrito / Comuna</label>
+                        <input type="text" name="colonia_empresa">
                     </div>
 
                     <div>
-
                         <label>Ciudad</label>
-
-                        <input
-                            type="text"
-                            name="ciudad_empresa"
-                        >
-
+                        <input type="text" name="ciudad_empresa">
                     </div>
 
                     <div>
-
-                        <label>
-                            Estado / Departamento / Provincia / Región
-                        </label>
-
-                        <input
-                            type="text"
-                            name="estado_empresa"
-                        >
-
+                        <label>Estado / Departamento / Provincia / Región</label>
+                        <input type="text" name="estado_empresa">
                     </div>
 
                     <div>
-
                         <label>Código Postal</label>
-
-                        <input
-                            type="text"
-                            name="codigo_postal_empresa"
-                        >
-
+                        <input type="text" name="codigo_postal_empresa">
                     </div>
 
                     <div class="full">
-
                         <label>Página Web</label>
-
-                        <input
-                            type="url"
-                            name="pagina_web"
-                        >
-
+                        <input type="url" name="pagina_web">
                     </div>
 
                 </div>
 
             </div>
-
         </div>
 
 
-        <!-- CONTACTO -->
+        <!-- 2. CONTACTO -->
 
         <div class="section">
 
             <div class="section-title">
-
                 2. DATOS DE LA PERSONA DE CONTACTO
 
-                <span class="info-icon">
+                <span class="info-icon" tabindex="0" aria-label="Información">
                     ⓘ
-
                     <span class="tooltip">
                         La persona indicada será la responsable por administrar el acceso a la plataforma de eFactor.
                     </span>
-
                 </span>
-
             </div>
 
             <div class="section-content">
@@ -664,88 +586,65 @@
                 <div class="grid">
 
                     <div>
-
                         <label>
                             Nombre completo
                             <span class="required">*</span>
                         </label>
-
-                        <input
-                            type="text"
-                            name="contacto_nombre"
-                            required
-                        >
-
+                        <input type="text" name="contacto_nombre" required>
                     </div>
 
                     <div>
-
                         <label>
                             Teléfono / WhatsApp
                             <span class="required">*</span>
                         </label>
 
-<div class="phone-group">
-    <select name="rep_codigo_pais">
-	<option value="+52">🇲🇽 +52</option>
-	<option value="+56">🇨🇱 +56</option>
-	<option value="+51">🇵🇪 +51</option>
-	<option value="+593">🇪🇨 +593</option>
-	<option value="+57">🇨🇴 +57</option>
-	<option value="+55">🇧🇷 +55</option>
-	<option value="+54">🇦🇷 +54</option>
-	<option value="+34">🇪🇸 +34</option>
-	<option value="+351">🇵🇹 +351</option>
-	<option value="+1">🇺🇸 +1</option>
-    </select>
+                        <div class="phone-group">
+                            <select name="contacto_codigo_pais">
+                                <option value="+52">🇲🇽 +52</option>
+                                <option value="+56">🇨🇱 +56</option>
+                                <option value="+51">🇵🇪 +51</option>
+                                <option value="+593">🇪🇨 +593</option>
+                                <option value="+57">🇨🇴 +57</option>
+                                <option value="+55">🇧🇷 +55</option>
+                                <option value="+54">🇦🇷 +54</option>
+                                <option value="+34">🇪🇸 +34</option>
+                                <option value="+351">🇵🇹 +351</option>
+                                <option value="+1">🇺🇸 +1</option>
+                            </select>
 
-    <input
-        type="tel"
-        name="contacto_telefono"
-        placeholder="Número de teléfono"
-    >
-</div>
-
+                            <input
+                                type="tel"
+                                name="contacto_telefono"
+                                placeholder="Número de teléfono"
+                                required
+                            >
+                        </div>
                     </div>
 
                     <div>
-
                         <label>
                             Correo electrónico
                             <span class="required">*</span>
                         </label>
-
-                        <input
-                            type="email"
-                            name="contacto_email"
-                            required
-                        >
-
+                        <input type="email" name="contacto_email" required>
                     </div>
-
 
                     <div>
                         <label>
                             Cargo
                             <span class="required">*</span>
                         </label>
-
-                        <input
-                            type="text"
-                            name="cargo"
-                            required
-                        >
-
+                        <input type="text" name="cargo" required>
                     </div>
 
                 </div>
 
             </div>
-
         </div>
 
 
-        <!-- BANKING -->
+        <!-- 3. DATOS BANCARIOS -->
 
         <div class="section">
 
@@ -766,19 +665,13 @@
                     onchange="mostrarDatosBancarios()"
                     required
                 >
-
                     <option value="">Seleccione</option>
                     <option value="MXN">PESOS MEXICANOS (MXN)</option>
                     <option value="USD">US DÓLAR (USD)</option>
                     <option value="AMBAS">AMBAS</option>
-
                 </select>
 
-
-                <div
-                    id="datos_mxn"
-                    class="conditional-section hidden"
-                >
+                <div id="datos_mxn" class="hidden">
 
                     <h3>Moneda Nacional</h3>
 
@@ -825,29 +718,19 @@
                         </div>
 
                         <div>
-
                             <label>Tipo de Cuenta</label>
-
                             <select name="mn_tipo_cuenta">
-
                                 <option value="">Seleccione</option>
                                 <option>Ahorro</option>
                                 <option>Corriente</option>
                                 <option>Cheques</option>
-
                             </select>
-
                         </div>
 
                     </div>
-
                 </div>
 
-
-                <div
-                    id="datos_usd"
-                    class="conditional-section hidden"
-                >
+                <div id="datos_usd" class="hidden">
 
                     <hr style="margin:30px 0;border:0;border-top:1px solid #ddd;">
 
@@ -901,30 +784,23 @@
                         </div>
 
                         <div>
-
                             <label>Tipo de Cuenta</label>
-
                             <select name="usd_tipo_cuenta">
-
                                 <option value="">Seleccione</option>
                                 <option>Ahorro</option>
                                 <option>Corriente</option>
                                 <option>Cheques</option>
-
                             </select>
-
                         </div>
 
                     </div>
-
                 </div>
 
             </div>
-
         </div>
 
 
-        <!-- REPRESENTANTE LEGAL -->
+        <!-- 4. REPRESENTANTE LEGAL -->
 
         <div class="section">
 
@@ -937,223 +813,142 @@
                 <div class="grid">
 
                     <div class="full">
-
                         <label>
                             Nombre completo
                             <span class="required">*</span>
                         </label>
-
-                        <input
-                            type="text"
-                            name="rep_nombre"
-                            required
-                        >
-
+                        <input type="text" name="rep_nombre" required>
                     </div>
 
                     <div class="full">
-
                         <label>Calle y número</label>
-
-                        <input
-                            type="text"
-                            name="rep_calle"
-                        >
-
+                        <input type="text" name="rep_calle">
                     </div>
 
                     <div>
-
-                        <label>
-                            Colonia / Distrito / Comuna
-                        </label>
-
-                        <input
-                            type="text"
-                            name="rep_colonia"
-                        >
-
+                        <label>Colonia / Distrito / Comuna</label>
+                        <input type="text" name="rep_colonia">
                     </div>
 
                     <div>
-
                         <label>Ciudad</label>
-
-                        <input
-                            type="text"
-                            name="rep_ciudad"
-                        >
-
+                        <input type="text" name="rep_ciudad">
                     </div>
 
                     <div>
-
-                        <label>
-                            Estado / Provincia / Región
-                        </label>
-
-                        <input
-                            type="text"
-                            name="rep_estado"
-                        >
-
+                        <label>Estado / Provincia / Región</label>
+                        <input type="text" name="rep_estado">
                     </div>
 
                     <div>
-
                         <label>Código Postal</label>
-
-                        <input
-                            type="text"
-                            name="rep_cp"
-                        >
-
+                        <input type="text" name="rep_cp">
                     </div>
 
                     <div>
-
                         <label>
                             Documento de Identidad
                             <span class="required">*</span>
                         </label>
-
-                        <input
-                            type="text"
-                            name="rep_documento"
-                            required
-                        >
-
+                        <input type="text" name="rep_documento" required>
                     </div>
 
                     <div>
-
                         <label>N.º de Pasaporte</label>
-
-                        <input
-                            type="text"
-                            name="rep_pasaporte"
-                        >
-
+                        <input type="text" name="rep_pasaporte">
                     </div>
 
                     <div>
-
                         <label>
                             Tel. Celular
                             <span class="required">*</span>
                         </label>
 
-<div class="phone-group">
-    <select name="rep_codigo_pais">
-	<option value="+52">🇲🇽 +52</option>
-	<option value="+56">🇨🇱 +56</option>
-	<option value="+51">🇵🇪 +51</option>
-	<option value="+593">🇪🇨 +593</option>
-	<option value="+57">🇨🇴 +57</option>
-	<option value="+55">🇧🇷 +55</option>
-	<option value="+54">🇦🇷 +54</option>
-	<option value="+34">🇪🇸 +34</option>
-	<option value="+351">🇵🇹 +351</option>
-	<option value="+1">🇺🇸 +1</option>
-    </select>
+                        <div class="phone-group">
+                            <select name="rep_codigo_pais_celular">
+                                <option value="+52">🇲🇽 +52</option>
+                                <option value="+56">🇨🇱 +56</option>
+                                <option value="+51">🇵🇪 +51</option>
+                                <option value="+593">🇪🇨 +593</option>
+                                <option value="+57">🇨🇴 +57</option>
+                                <option value="+55">🇧🇷 +55</option>
+                                <option value="+54">🇦🇷 +54</option>
+                                <option value="+34">🇪🇸 +34</option>
+                                <option value="+351">🇵🇹 +351</option>
+                                <option value="+1">🇺🇸 +1</option>
+                            </select>
 
-    <input
-        type="tel"
-        name="tel_celular"
-        placeholder="Número de teléfono"
-    >
-</div>
-
+                            <input
+                                type="tel"
+                                name="tel_celular"
+                                placeholder="Número de teléfono"
+                                required
+                            >
+                        </div>
                     </div>
 
                     <div>
-
                         <label>Tel. Particular</label>
 
-<div class="phone-group">
-    <select name="rep_codigo_pais">
-	<option value="+52">🇲🇽 +52</option>
-	<option value="+56">🇨🇱 +56</option>
-	<option value="+51">🇵🇪 +51</option>
-	<option value="+593">🇪🇨 +593</option>
-	<option value="+57">🇨🇴 +57</option>
-	<option value="+55">🇧🇷 +55</option>
-	<option value="+54">🇦🇷 +54</option>
-	<option value="+34">🇪🇸 +34</option>
-	<option value="+351">🇵🇹 +351</option>
-	<option value="+1">🇺🇸 +1</option>
-    </select>
+                        <div class="phone-group">
+                            <select name="rep_codigo_pais_particular">
+                                <option value="+52">🇲🇽 +52</option>
+                                <option value="+56">🇨🇱 +56</option>
+                                <option value="+51">🇵🇪 +51</option>
+                                <option value="+593">🇪🇨 +593</option>
+                                <option value="+57">🇨🇴 +57</option>
+                                <option value="+55">🇧🇷 +55</option>
+                                <option value="+54">🇦🇷 +54</option>
+                                <option value="+34">🇪🇸 +34</option>
+                                <option value="+351">🇵🇹 +351</option>
+                                <option value="+1">🇺🇸 +1</option>
+                            </select>
 
-    <input
-        type="tel"
-        name="tel_particular"
-        placeholder="Número de teléfono"
-    >
-</div>
-
+                            <input
+                                type="tel"
+                                name="tel_particular"
+                                placeholder="Número de teléfono"
+                            >
+                        </div>
                     </div>
 
                     <div>
-
                         <label>Estado Civil</label>
 
                         <select name="rep_estado_civil">
-
                             <option value="">Seleccione una opción</option>
                             <option value="casado">Casado(a)</option>
                             <option value="soltero">Soltero(a)</option>
                             <option value="viudo">Viudo(a)</option>
                             <option value="no_aplica">No aplica</option>
-
                         </select>
-
                     </div>
 
                     <div>
-
                         <label>
                             Correo
                             <span class="required">*</span>
                         </label>
-
-                        <input
-                            type="email"
-                            name="rep_email"
-                            required
-                        >
-
+                        <input type="email" name="rep_email" required>
                     </div>
 
                     <div>
-
                         <label>Lugar de Nacimiento</label>
-
-                        <input
-                            type="text"
-                            name="rep_lugar_nacimiento"
-                        >
-
+                        <input type="text" name="rep_lugar_nacimiento">
                     </div>
 
                     <div>
-
                         <label>Nacionalidad</label>
-
-                        <input
-                            type="text"
-                            name="rep_nacionalidad"
-                        >
-
+                        <input type="text" name="rep_nacionalidad">
                     </div>
 
                 </div>
 
             </div>
-
         </div>
 
 
-        <!-- ACTIVIDAD -->
+        <!-- 5. CONOCIMIENTO DE LA EMPRESA -->
 
         <div class="section">
 
@@ -1166,160 +961,104 @@
                 <div class="grid">
 
                     <div class="full">
-
                         <label>
                             Actividad o giro de negocio
                             <span class="required">*</span>
                         </label>
-
                         <textarea name="actividad" required></textarea>
-
                     </div>
 
                     <div>
-
                         <label>
                             Actualmente descuenta sus facturas a través de:
                         </label>
 
                         <select name="descuento_facturas">
-
                             <option value="">Seleccione</option>
                             <option>NAFIN</option>
                             <option>OTRO</option>
                             <option>NINGUNO</option>
-
                         </select>
-
                     </div>
 
                     <div>
-
                         <label>
                             Número de empleados
                             <span class="required">*</span>
                         </label>
-
-                        <input
-                            type="text"
-                            name="empleados"
-                            required
-                        >
-
+                        <input type="text" name="empleados" required>
                     </div>
 
                     <div>
-
                         <label>
-
                             Total de ventas anuales MXN
 
-                            <span class="info-icon">
+                            <span class="info-icon" tabindex="0" aria-label="Información">
                                 ⓘ
-
                                 <span class="tooltip">
                                     Apenas para empresas que operan en pesos mexicanos.
                                 </span>
-
                             </span>
-
                         </label>
 
-                        <input
-                            type="text"
-                            name="ventas_mxn"
-                        >
-
+                        <input type="text" name="ventas_mxn">
                     </div>
 
                     <div>
-
                         <label>
                             Total de ventas anuales USD
                             <span class="required">*</span>
                         </label>
-
-                        <input
-                            type="text"
-                            name="ventas_usd"
-                            required
-                        >
-
+                        <input type="text" name="ventas_usd" required>
                     </div>
 
                     <div>
-
-                        <label>
-                            ¿Requiere financiamiento?
-                        </label>
+                        <label>¿Requiere financiamiento?</label>
 
                         <select name="requiere_financiamiento">
-
                             <option value="">Seleccione</option>
                             <option>Sí</option>
                             <option>No</option>
-
                         </select>
-
                     </div>
 
                     <div>
-
-                        <label>
-                            ¿Exporta sus productos?
-                        </label>
+                        <label>¿Exporta sus productos?</label>
 
                         <select
                             id="exporta"
                             name="exporta"
                             onchange="toggleExportacion()"
                         >
-
                             <option value="">Seleccione</option>
                             <option>Sí</option>
                             <option>No</option>
-
                         </select>
-
                     </div>
 
-                    <div
-                        id="datos_exportacion"
-                        class="full hidden"
-                    >
+                    <div id="datos_exportacion" class="full hidden">
 
-                        <label>
-                            ¿En cuáles países exporta?
-                        </label>
-
+                        <label>¿En cuáles países exporta?</label>
                         <textarea name="paises_exportacion"></textarea>
 
                         <label style="margin-top:15px;">
                             Indique monto aproximado
                         </label>
-
-                        <input
-                            type="text"
-                            name="monto_exportacion"
-                        >
+                        <input type="text" name="monto_exportacion">
 
                     </div>
 
                     <div class="full">
 
                         <label>
-
                             ¿Su empresa se encuentra en alguna localidad con menos de 50 mil habitantes?
 
-                            <span class="info-icon">
+                            <span class="info-icon" tabindex="0" aria-label="Información">
                                 ⓘ
-
                                 <span class="tooltip">
                                     Seleccione “Sí” si la empresa se encuentra ubicada en una localidad cuya población sea inferior a 50.000 habitantes.
                                 </span>
-
                             </span>
-
                         </label>
 
                         <select
@@ -1327,66 +1066,42 @@
                             name="localidad_pequena"
                             onchange="toggleLocalidad()"
                         >
-
                             <option value="">Seleccione</option>
                             <option>Sí</option>
                             <option>No</option>
-
                         </select>
 
                     </div>
 
-                    <div
-                        id="datos_localidad"
-                        class="full hidden"
-                    >
+                    <div id="datos_localidad" class="full hidden">
 
-                        <label>
-                            ¿En cuáles localidades?
-                        </label>
-
+                        <label>¿En cuáles localidades?</label>
                         <textarea name="localidades"></textarea>
 
                     </div>
 
                     <div>
-
-                        <label>
-                            Principales productos
-                        </label>
-
+                        <label>Principales productos</label>
                         <textarea name="productos"></textarea>
-
                     </div>
 
                     <div>
-
-                        <label>
-                            Principales clientes
-                        </label>
-
+                        <label>Principales clientes</label>
                         <textarea name="clientes"></textarea>
-
                     </div>
 
                     <div class="full">
-
-                        <label>
-                            Principales proveedores
-                        </label>
-
+                        <label>Principales proveedores</label>
                         <textarea name="proveedores"></textarea>
-
                     </div>
 
                 </div>
 
             </div>
-
         </div>
 
 
-        <!-- ORIGEN RECURSOS -->
+        <!-- 6. ORIGEN DE LOS RECURSOS -->
 
         <div class="section">
 
@@ -1398,94 +1113,43 @@
 
                 <div class="grid">
 
-                    <div class="form-group">
-
-                        <label>
-                            Origen de los recursos
-                        </label>
+                    <div>
+                        <label>Origen de los recursos</label>
 
                         <select name="origen_recursos">
-
-                            <option value="">
-                                Seleccione una opción
-                            </option>
-
-                            <option value="Ahorros">
-                                Ahorros
-                            </option>
-
-                            <option value="Herencia">
-                                Herencia
-                            </option>
-
-                            <option value="Salario / Honorarios">
-                                Salario / Honorarios
-                            </option>
-
-                            <option value="Ventas del negocio">
-                                Ventas del negocio
-                            </option>
-
-                            <option value="Bienes inmuebles">
-                                Bienes inmuebles
-                            </option>
-
-                            <option value="Otros">
-                                Otros
-                            </option>
-
+                            <option value="">Seleccione una opción</option>
+                            <option value="Ahorros">Ahorros</option>
+                            <option value="Herencia">Herencia</option>
+                            <option value="Salario / Honorarios">Salario / Honorarios</option>
+                            <option value="Ventas del negocio">Ventas del negocio</option>
+                            <option value="Bienes inmuebles">Bienes inmuebles</option>
+                            <option value="Otros">Otros</option>
                         </select>
-
                     </div>
 
-                    <div class="form-group">
-
-                        <label>
-                            Medio de recepción de los recursos
-                        </label>
+                    <div>
+                        <label>Medio de recepción de los recursos</label>
 
                         <select name="medio_recursos">
-
-                            <option value="">
-                                Seleccione una opción
-                            </option>
-
-                            <option value="Cheque">
-                                Cheque
-                            </option>
-
-                            <option value="Efectivo">
-                                Efectivo
-                            </option>
-
-                            <option value="Transferencia">
-                                Transferencia
-                            </option>
-
+                            <option value="">Seleccione una opción</option>
+                            <option value="Cheque">Cheque</option>
+                            <option value="Efectivo">Efectivo</option>
+                            <option value="Transferencia">Transferencia</option>
                         </select>
-
                     </div>
 
-                    <div class="form-group full">
-
-                        <label>
-                            Especifique, si corresponde
-                        </label>
-
-                        <textarea
-                            name="detalle_origen_recursos"
-                        ></textarea>
-
+                    <div class="full">
+                        <label>Especifique, si corresponde</label>
+                        <textarea name="detalle_origen_recursos"></textarea>
                     </div>
 
                 </div>
 
             </div>
-
         </div>
 
 
-        <!-- AML -->
+        <!-- 7. AML -->
 
         <div class="section">
 
@@ -1498,7 +1162,6 @@
                 <div class="grid">
 
                     <div>
-
                         <label>
                             ¿Alguno de los socios o familiares es figura política?
                         </label>
@@ -1508,69 +1171,32 @@
                             name="figura_politica"
                             onchange="toggleFiguraPolitica()"
                         >
-
-                            <option value="">
-                                Seleccione
-                            </option>
-
+                            <option value="">Seleccione</option>
                             <option>Sí</option>
                             <option>No</option>
-
                         </select>
-
                     </div>
 
-                    <div
-                        id="datos_figura_politica"
-                        class="full hidden"
-                    >
+                    <div id="datos_figura_politica" class="full hidden">
 
                         <div>
-
                             <label>Nombre</label>
-
-                            <input
-                                type="text"
-                                name="politico_nombre"
-                            >
-
+                            <input type="text" name="politico_nombre">
                         </div>
 
                         <div>
-
                             <label>Partido</label>
-
-                            <input
-                                type="text"
-                                name="politico_partido"
-                            >
-
+                            <input type="text" name="politico_partido">
                         </div>
 
                         <div>
-
-                            <label>
-                                Gobierno / Legislador
-                            </label>
-
-                            <input
-                                type="text"
-                                name="politico_cargo"
-                            >
-
+                            <label>Gobierno / Legislador</label>
+                            <input type="text" name="politico_cargo">
                         </div>
 
                         <div class="full">
-
-                            <label>
-                                Nombre del director general o equivalente
-                            </label>
-
-                            <input
-                                type="text"
-                                name="director_general"
-                            >
-
+                            <label>Nombre del director general o equivalente</label>
+                            <input type="text" name="director_general">
                         </div>
 
                     </div>
@@ -1578,11 +1204,10 @@
                 </div>
 
             </div>
-
         </div>
 
 
-        <!-- ACCIONISTAS -->
+        <!-- 8. ACCIONISTAS -->
 
         <div class="section">
 
@@ -1601,99 +1226,65 @@
                         <div class="grid-3">
 
                             <div>
-
                                 <label>
-                                    Nombre completo<span class="required">*</span>
+                                    Nombre completo
+                                    <span class="required">*</span>
                                 </label>
-
-                                <input
-                                    type="text"
-                                    name="accionista_1_nombre"
-                                >
-
+                                <input type="text" name="accionista_1_nombre" required>
                             </div>
 
                             <div>
-
                                 <label>
-                                    % de Participación<span class="required">*</span>
+                                    % de Participación
+                                    <span class="required">*</span>
                                 </label>
-
                                 <input
                                     type="number"
                                     step="0.01"
                                     name="accionista_1_porcentaje"
+                                    required
                                 >
-
                             </div>
 
                             <div>
-
                                 <label>
+                                    RFC con Homoclave
+                                    <span class="required">*</span>
 
-                                    RFC con Homoclave<span class="required">*</span>
-
-                                    <span class="info-icon">
+                                    <span class="info-icon" tabindex="0" aria-label="Información">
                                         ⓘ
-
                                         <span class="tooltip">
                                             Número del documento de identidad / RUC / RUT / Tax ID
                                         </span>
-
                                     </span>
-
                                 </label>
 
-                                <input
-                                    type="text"
-                                    name="accionista_1_rfc"
-                                >
-
+                                <input type="text" name="accionista_1_rfc" required>
                             </div>
 
                             <div>
-
                                 <label>
-                                    Nacionalidad<span class="required">*</span>
+                                    Nacionalidad
+                                    <span class="required">*</span>
                                 </label>
-
-                                <input
-                                    type="text"
-                                    name="accionista_1_nacionalidad"
-                                >
-
+                                <input type="text" name="accionista_1_nacionalidad" required>
                             </div>
 
                             <div>
-
                                 <label>
-                                    Género<span class="required">*</span>
+                                    Género
+                                    <span class="required">*</span>
                                 </label>
 
-                                <select name="accionista_1_genero">
-
-                                    <option value="">
-                                        Seleccione
-                                    </option>
-
-                                    <option>
-                                        Femenino
-                                    </option>
-
-                                    <option>
-                                        Masculino
-                                    </option>
-
-                                    <option>
-                                        No aplica
-                                    </option>
-
+                                <select name="accionista_1_genero" required>
+                                    <option value="">Seleccione</option>
+                                    <option>Femenino</option>
+                                    <option>Masculino</option>
+                                    <option>No aplica</option>
                                 </select>
-
                             </div>
 
                         </div>
-
                     </div>
 
 
@@ -1704,118 +1295,64 @@
                         <div class="grid-3">
 
                             <div>
-
-                                <label>
-                                    Nombre completo
-                                </label>
-
-                                <input
-                                    type="text"
-                                    name="accionista_2_nombre"
-                                >
-
+                                <label>Nombre completo</label>
+                                <input type="text" name="accionista_2_nombre">
                             </div>
 
                             <div>
-
-                                <label>
-                                    % Participación
-                                </label>
-
+                                <label>% Participación</label>
                                 <input
                                     type="number"
                                     step="0.01"
                                     name="accionista_2_porcentaje"
                                 >
-
                             </div>
 
                             <div>
-
                                 <label>
-
                                     RFC con Homoclave
 
-                                    <span class="info-icon">
+                                    <span class="info-icon" tabindex="0" aria-label="Información">
                                         ⓘ
-
                                         <span class="tooltip">
                                             Número del documento de identidad / RUC / RUT / Tax ID
                                         </span>
-
                                     </span>
-
                                 </label>
 
-                                <input
-                                    type="text"
-                                    name="accionista_2_rfc"
-                                >
-
+                                <input type="text" name="accionista_2_rfc">
                             </div>
 
                             <div>
-
-                                <label>
-                                    Nacionalidad
-                                </label>
-
-                                <input
-                                    type="text"
-                                    name="accionista_2_nacionalidad"
-                                >
-
+                                <label>Nacionalidad</label>
+                                <input type="text" name="accionista_2_nacionalidad">
                             </div>
 
                             <div>
-
-                                <label>
-                                    Género
-                                </label>
+                                <label>Género</label>
 
                                 <select name="accionista_2_genero">
-
-                                    <option value="">
-                                        Seleccione
-                                    </option>
-
-                                    <option>
-                                        Femenino
-                                    </option>
-
-                                    <option>
-                                        Masculino
-                                    </option>
-
-                                    <option>
-                                        No aplica
-                                    </option>
-
+                                    <option value="">Seleccione</option>
+                                    <option>Femenino</option>
+                                    <option>Masculino</option>
+                                    <option>No aplica</option>
                                 </select>
-
                             </div>
 
                         </div>
-
                     </div>
 
                 </div>
 
-
-                <button
-                    type="button"
-                    class="light"
-                    onclick="addShareholder()"
-                >
+                <button type="button" class="light" onclick="addShareholder()">
                     + Añadir otro accionista
                 </button>
 
             </div>
-
         </div>
 
 
-        <!-- WOMEN IN MANAGEMENT -->
+        <!-- 9. MUJERES EN CARGOS DIRECTIVOS -->
 
         <div class="section">
 
@@ -1838,83 +1375,39 @@
                         <div class="grid">
 
                             <div>
-
-                                <label>
-                                    Cargo
-                                </label>
+                                <label>Cargo</label>
 
                                 <select name="cargo_mujer_1">
-
-                                    <option value="">
-                                        Seleccione
-                                    </option>
-
-                                    <option>
-                                        Directora / CEO
-                                    </option>
-
-                                    <option>
-                                        Directora Financiera / CFO
-                                    </option>
-
-                                    <option>
-                                        Directora de Operaciones / COO
-                                    </option>
-
-                                    <option>
-                                        Directora de Ventas
-                                    </option>
-
-                                    <option>
-                                        Presidenta
-                                    </option>
-
-                                    <option>
-                                        Vicepresidenta
-                                    </option>
-
-                                    <option>
-                                        Ninguna mujer en esos cargos
-                                    </option>
-
+                                    <option value="">Seleccione</option>
+                                    <option>Directora / CEO</option>
+                                    <option>Directora Financiera / CFO</option>
+                                    <option>Directora de Operaciones / COO</option>
+                                    <option>Directora de Ventas</option>
+                                    <option>Presidenta</option>
+                                    <option>Vicepresidenta</option>
+                                    <option>Ninguna mujer en esos cargos</option>
                                 </select>
-
                             </div>
 
                             <div>
-
-                                <label>
-                                    Nombre y apellido
-                                </label>
-
-                                <input
-                                    type="text"
-                                    name="nombre_mujer_cargo_1"
-                                >
-
+                                <label>Nombre y apellido</label>
+                                <input type="text" name="nombre_mujer_cargo_1">
                             </div>
 
                         </div>
-
                     </div>
 
                 </div>
 
-
-                <button
-                    type="button"
-                    class="light"
-                    onclick="addWoman()"
-                >
+                <button type="button" class="light" onclick="addWoman()">
                     + Añadir otra mujer
                 </button>
 
             </div>
-
         </div>
 
 
-        <!-- PROPIETARIOS REALES -->
+        <!-- 10. PROPIETARIOS REALES -->
 
         <div class="section">
 
@@ -1962,13 +1455,11 @@
                     <ol type="I">
 
                         <li>
-
                             <strong>
                                 Propiedad de valores o participación en la composición accionaria o capital social
                             </strong>
 
                             <ul>
-
                                 <li>
                                     a) Persona Física que directa o indirectamente, sea titular o posea el 25% o más de la composición accionaria o del capital social de una Persona Moral.
                                 </li>
@@ -1976,20 +1467,15 @@
                                 <li>
                                     b) Accionista o socio Persona Física que sea titular, posea o adquiera la propiedad de valores de forma directa o indirecta, en copropiedad o cotitularidad con otros accionistas o socios mediante un contrato celebrado de forma individual o conjunta.
                                 </li>
-
                             </ul>
-
                         </li>
 
-
                         <li>
-
                             <strong>
                                 Control que tenga sobre la sociedad, por las facultades con las que cuenta
                             </strong>
 
                             <ul>
-
                                 <li>
                                     c) Persona Física facultada para imponer directa o indirectamente decisiones en la asamblea general de accionistas o de socios en el órgano de gobierno de una Persona Moral.
                                 </li>
@@ -2001,37 +1487,27 @@
                                 <li>
                                     e) Persona Física facultada para mantener la titularidad de derechos que permitan, directa o indirectamente, ejercer el voto respecto de más del 50% del capital social.
                                 </li>
-
                             </ul>
-
                         </li>
 
-
                         <li>
-
                             <strong>
                                 Control que tenga de la sociedad por el cargo que se ejerce
                             </strong>
 
                             <ul>
-
                                 <li>
                                     f) Persona Física facultada para dirigir, directa o indirectamente, la administración, la estrategia o las principales políticas, a través de un cargo directivo de administrador, director general, gerente, presidente, vicepresidente, tesorero, entre otros.
                                 </li>
-
                             </ul>
-
                         </li>
 
-
                         <li>
-
                             <strong>
                                 A través de cualquier otro medio
                             </strong>
 
                             <ul>
-
                                 <li>
                                     g) Persona Física SIN la propiedad de valores, que tiene participación en las finanzas de una Persona Moral, que tenga alguna relación personal o vínculo familiar con los altos mandos de la misma o que tenga algún derecho de propiedad, entre otros, que goza de los beneficios de una cuenta, contrato u operación y es, en última instancia, el verdadero dueño de los recursos, al tener sobre estos derechos de uso, disfrute, aprovechamiento, dispersión o disposición.
                                 </li>
@@ -2039,9 +1515,7 @@
                                 <li>
                                     h) Otro.
                                 </li>
-
                             </ul>
-
                         </li>
 
                     </ol>
@@ -2053,94 +1527,56 @@
 
                     <div class="owner">
 
-                        <h4>
-                            Propietario Real 1
-                        </h4>
+                        <h4>Propietario Real 1</h4>
 
                         <div class="grid">
 
                             <div>
-
                                 <label>
-                                    Nombre completo<span class="required">*</span>
+                                    Nombre completo
+                                    <span class="required">*</span>
                                 </label>
 
                                 <input
                                     type="text"
                                     name="propietario_1_nombre"
+                                    required
                                 >
-
                             </div>
 
                             <div>
-
                                 <label>
-                                    Criterio de control<span class="required">*</span>
+                                    Criterio de control
+                                    <span class="required">*</span>
                                 </label>
 
-                                <select name="propietario_1_criterio">
-
-                                    <option value="">
-                                        Seleccione
-                                    </option>
-
-                                    <option>
-                                        a) Participación igual o superior al 25%
-                                    </option>
-
-                                    <option>
-                                        b) Propiedad indirecta
-                                    </option>
-
-                                    <option>
-                                        c) Control de decisiones
-                                    </option>
-
-                                    <option>
-                                        d) Nombramiento de administradores
-                                    </option>
-
-                                    <option>
-                                        e) Derechos de voto superiores al 50%
-                                    </option>
-
-                                    <option>
-                                        f) Cargo directivo
-                                    </option>
-
-                                    <option>
-                                        g) Otro medio de control
-                                    </option>
-
-                                    <option>
-                                        h) Otro
-                                    </option>
-
+                                <select name="propietario_1_criterio" required>
+                                    <option value="">Seleccione</option>
+                                    <option>a) Participación igual o superior al 25%</option>
+                                    <option>b) Propiedad indirecta</option>
+                                    <option>c) Control de decisiones</option>
+                                    <option>d) Nombramiento de administradores</option>
+                                    <option>e) Derechos de voto superiores al 50%</option>
+                                    <option>f) Cargo directivo</option>
+                                    <option>g) Otro medio de control</option>
+                                    <option>h) Otro</option>
                                 </select>
-
                             </div>
 
                         </div>
-
                     </div>
 
                 </div>
 
-
-                <button
-                    type="button"
-                    class="light"
-                    onclick="addOwner()"
-                >
+                <button type="button" class="light" onclick="addOwner()">
                     + Añadir otro propietario real
                 </button>
 
             </div>
-
         </div>
 
 
-        <!-- DATOS PROPIETARIO REAL 1 -->
+        <!-- 11. DATOS DEL PROPIETARIO REAL 1 -->
 
         <div class="section">
 
@@ -2151,45 +1587,41 @@
             <div class="section-content">
 
                 <div class="grid">
-<div class="field owner-full-width">
-    <label for="propietario_nombre">Nombre Completo<span class="required">*</span></label>
-    <input
-        type="text"
-        id="propietario_nombre"
-        name="propietario_nombre"
-    >
-</div>
+
+                    <div class="owner-full-width">
+
+                        <label>
+                            Nombre Completo
+                            <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            name="propietario_1_nombre_completo"
+                            required
+                        >
+
+                    </div>
+
                     <div>
 
                         <label>
+                            Tipo de persona física
+                            <span class="required">*</span>
 
-                            Tipo de persona física<span class="required">*</span>
-
-                            <span class="info-icon">
+                            <span class="info-icon" tabindex="0" aria-label="Información">
                                 ⓘ
 
                                 <span class="tooltip">
                                     Se consideran como nacionales apenas los ciudadanos de México. Los demás son considerados extranjeros.
                                 </span>
-
                             </span>
-
                         </label>
 
-                        <select name="propietario_1_tipo">
-
-                            <option value="">
-                                Seleccione
-                            </option>
-
-                            <option>
-                                Nacional
-                            </option>
-
-                            <option>
-                                Extranjera
-                            </option>
-
+                        <select name="propietario_1_tipo" required>
+                            <option value="">Seleccione</option>
+                            <option>Nacional</option>
+                            <option>Extranjera</option>
                         </select>
 
                     </div>
@@ -2197,23 +1629,14 @@
                     <div>
 
                         <label>
-                            Género<span class="required">*</span>
+                            Género
+                            <span class="required">*</span>
                         </label>
 
-                        <select name="propietario_1_genero">
-
-                            <option value="">
-                                Seleccione
-                            </option>
-
-                            <option>
-                                Femenino
-                            </option>
-
-                            <option>
-                                Masculino
-                            </option>
-
+                        <select name="propietario_1_genero" required>
+                            <option value="">Seleccione</option>
+                            <option>Femenino</option>
+                            <option>Masculino</option>
                         </select>
 
                     </div>
@@ -2221,12 +1644,14 @@
                     <div>
 
                         <label>
-                            Fecha de nacimiento<span class="required">*</span>
+                            Fecha de nacimiento
+                            <span class="required">*</span>
                         </label>
 
                         <input
                             type="date"
                             name="propietario_1_fecha_nacimiento"
+                            required
                         >
 
                     </div>
@@ -2234,21 +1659,21 @@
                     <div>
 
                         <label>
-                            País de nacimiento<span class="required">*</span>
+                            País de nacimiento
+                            <span class="required">*</span>
                         </label>
 
                         <input
                             type="text"
                             name="propietario_1_pais_nacimiento"
+                            required
                         >
 
                     </div>
 
                     <div>
 
-                        <label>
-                            Nacionalidad
-                        </label>
+                        <label>Nacionalidad</label>
 
                         <input
                             type="text"
@@ -2258,6 +1683,7 @@
                     </div>
 
                     <div>
+
                         <label>
                             Ocupación, profesión, actividad o giro del negocio
                         </label>
@@ -2271,11 +1697,10 @@
                 </div>
 
             </div>
-
         </div>
 
 
-        <!-- DOCUMENTATION -->
+        <!-- 12. DOCUMENTACIÓN -->
 
         <div class="section">
 
@@ -2289,91 +1714,48 @@
                     Puede adjuntar los documentos solicitados para la afiliación.
                 </p>
 
-                <label>
-                    Copia del RFC / RUC / RUT actualizado
-                </label>
-
-                <input
-                    type="file"
-                    name="documento_rfc"
-                >
+                <label>Copia del RFC / RUC / RUT actualizado</label>
+                <input type="file" name="documento_rfc">
 
                 <br><br>
 
-                <label>
-                    Comprobante de domicilio fiscal
-                </label>
-
-                <input
-                    type="file"
-                    name="documento_domicilio"
-                >
+                <label>Comprobante de domicilio fiscal</label>
+                <input type="file" name="documento_domicilio">
 
                 <br><br>
 
-                <label>
-                    Identificación oficial del representante legal
-                </label>
-
-                <input
-                    type="file"
-                    name="documento_identidad"
-                >
+                <label>Identificación oficial del representante legal</label>
+                <input type="file" name="documento_identidad">
 
                 <br><br>
 
-                <label>
-                    Estado de cuenta bancario
-                </label>
-
-                <input
-                    type="file"
-                    name="documento_banco"
-                >
+                <label>Estado de cuenta bancario</label>
+                <input type="file" name="documento_banco">
 
                 <br><br>
 
-                <label>
-                    Acta Constitutiva
-                </label>
-
-                <input
-                    type="file"
-                    name="documento_constitutiva"
-                >
+                <label>Acta Constitutiva</label>
+                <input type="file" name="documento_constitutiva">
 
                 <br><br>
 
-                <label>
-                    Última Asamblea
-                </label>
-
-                <input
-                    type="file"
-                    name="documento_asamblea"
-                >
+                <label>Última Asamblea</label>
+                <input type="file" name="documento_asamblea">
 
                 <br><br>
 
-                <label>
-                    Poderes del representante legal
-                </label>
-
-                <input
-                    type="file"
-                    name="documento_poderes"
-                >
+                <label>Poderes del representante legal</label>
+                <input type="file" name="documento_poderes">
 
                 <p class="notice">
                     Los documentos seleccionados serán enviados junto con el formulario.
                 </p>
 
             </div>
-
         </div>
 
 
-        <!-- BUTTONS -->
+        <!-- ENVIAR -->
 
         <div class="button-area">
 
@@ -2388,36 +1770,29 @@
         </div>
 
     </form>
-
 </div>
 
 
 <script>
 
-/*
- * ================================================================
- * CONFIGURACIÓN
- * ================================================================
-
+/* ================================================================
+   CONFIGURACIÓN
+   ================================================================ */
 
 const SCRIPT_URL =
     "https://script.google.com/macros/s/AKfycbxIx9XnZgMFDp1U6d8MgJ8u81MduGf5lysb2-ZR8k4zfSV7Cec30Q5J4wEyIsohgAHkEA/exec";
 
-
 const EMAIL_DESTINO =
     "cmoreira@efactornetwork.com";
-
 
 let shareholderCount = 2;
 let womanCount = 1;
 let ownerCount = 1;
 
 
-/*
- * ================================================================
- * DATOS BANCARIOS
- * ================================================================
- */
+/* ================================================================
+   DATOS BANCARIOS
+   ================================================================ */
 
 function mostrarDatosBancarios() {
 
@@ -2440,11 +1815,9 @@ function mostrarDatosBancarios() {
 }
 
 
-/*
- * ================================================================
- * EXPORTACIÓN
- * ================================================================
- */
+/* ================================================================
+   EXPORTACIÓN
+   ================================================================ */
 
 function toggleExportacion() {
 
@@ -2460,11 +1833,9 @@ function toggleExportacion() {
 }
 
 
-/*
- * ================================================================
- * LOCALIDAD
- * ================================================================
- */
+/* ================================================================
+   LOCALIDAD
+   ================================================================ */
 
 function toggleLocalidad() {
 
@@ -2480,11 +1851,9 @@ function toggleLocalidad() {
 }
 
 
-/*
- * ================================================================
- * FIGURA POLÍTICA
- * ================================================================
- */
+/* ================================================================
+   FIGURA POLÍTICA
+   ================================================================ */
 
 function toggleFiguraPolitica() {
 
@@ -2500,11 +1869,9 @@ function toggleFiguraPolitica() {
 }
 
 
-/*
- * ================================================================
- * AÑADIR ACCIONISTA
- * ================================================================
- */
+/* ================================================================
+   AÑADIR ACCIONISTA
+   ================================================================ */
 
 function addShareholder() {
 
@@ -2519,113 +1886,64 @@ function addShareholder() {
     div.className = "owner";
 
     div.innerHTML = `
-
-        <h4>
-            Accionista ${shareholderCount}
-        </h4>
+        <h4>Accionista ${shareholderCount}</h4>
 
         <div class="grid-3">
 
             <div>
-
-                <label>
-                    Nombre completo
-                </label>
-
+                <label>Nombre completo</label>
                 <input
                     type="text"
                     name="accionista_${shareholderCount}_nombre"
                 >
-
             </div>
 
-
             <div>
-
-                <label>
-                    % Participación
-                </label>
-
+                <label>% Participación</label>
                 <input
                     type="number"
                     step="0.01"
                     name="accionista_${shareholderCount}_porcentaje"
                 >
-
             </div>
 
-
             <div>
-
-                <label>
-                    RFC con Homoclave
-                </label>
-
+                <label>RFC con Homoclave</label>
                 <input
                     type="text"
                     name="accionista_${shareholderCount}_rfc"
                 >
-
             </div>
 
-
             <div>
-
-                <label>
-                    Nacionalidad
-                </label>
-
+                <label>Nacionalidad</label>
                 <input
                     type="text"
                     name="accionista_${shareholderCount}_nacionalidad"
                 >
-
             </div>
 
-
             <div>
+                <label>Género</label>
 
-                <label>
-                    Género
-                </label>
-
-                <select
-                    name="accionista_${shareholderCount}_genero"
-                >
-
-                    <option value="">
-                        Seleccione
-                    </option>
-
-                    <option>
-                        Femenino
-                    </option>
-
-                    <option>
-                        Masculino
-                    </option>
-
-                    <option>
-                        No aplica
-                    </option>
-
+                <select name="accionista_${shareholderCount}_genero">
+                    <option value="">Seleccione</option>
+                    <option>Femenino</option>
+                    <option>Masculino</option>
+                    <option>No aplica</option>
                 </select>
-
             </div>
 
         </div>
-
     `;
 
     container.appendChild(div);
 }
 
 
-/*
- * ================================================================
- * AÑADIR MUJER DIRECTIVA
- * ================================================================
- */
+/* ================================================================
+   AÑADIR MUJER DIRECTIVA
+   ================================================================ */
 
 function addWoman() {
 
@@ -2640,86 +1958,44 @@ function addWoman() {
     div.className = "owner";
 
     div.innerHTML = `
-
-        <h4>
-            Mujer directiva ${womanCount}
-        </h4>
+        <h4>Mujer directiva ${womanCount}</h4>
 
         <div class="grid">
 
             <div>
+                <label>Cargo</label>
 
-                <label>
-                    Cargo
-                </label>
-
-                <select
-                    name="cargo_mujer_${womanCount}"
-                >
-
-                    <option value="">
-                        Seleccione
-                    </option>
-
-                    <option>
-                        Directora / CEO
-                    </option>
-
-                    <option>
-                        Directora Financiera / CFO
-                    </option>
-
-                    <option>
-                        Directora de Operaciones / COO
-                    </option>
-
-                    <option>
-                        Directora de Ventas
-                    </option>
-
-                    <option>
-                        Presidenta
-                    </option>
-
-                    <option>
-                        Vicepresidenta
-                    </option>
-
-                    <option>
-                        Ninguna mujer en esos cargos
-                    </option>
-
+                <select name="cargo_mujer_${womanCount}">
+                    <option value="">Seleccione</option>
+                    <option>Directora / CEO</option>
+                    <option>Directora Financiera / CFO</option>
+                    <option>Directora de Operaciones / COO</option>
+                    <option>Directora de Ventas</option>
+                    <option>Presidenta</option>
+                    <option>Vicepresidenta</option>
+                    <option>Ninguna mujer en esos cargos</option>
                 </select>
-
             </div>
 
-
             <div>
-
-                <label>
-                    Nombre y apellido
-                </label>
+                <label>Nombre y apellido</label>
 
                 <input
                     type="text"
                     name="nombre_mujer_cargo_${womanCount}"
                 >
-
             </div>
 
         </div>
-
     `;
 
     container.appendChild(div);
 }
 
 
-/*
- * ================================================================
- * AÑADIR PROPIETARIO REAL
- * ================================================================
- */
+/* ================================================================
+   AÑADIR PROPIETARIO REAL
+   ================================================================ */
 
 function addOwner() {
 
@@ -2743,90 +2019,47 @@ function addOwner() {
     div.className = "owner";
 
     div.innerHTML = `
-
-        <h4>
-            Propietario Real ${ownerCount}
-        </h4>
+        <h4>Propietario Real ${ownerCount}</h4>
 
         <div class="grid">
 
             <div>
-
-                <label>
-                    Nombre completo
-                </label>
+                <label>Nombre completo</label>
 
                 <input
                     type="text"
                     name="propietario_${ownerCount}_nombre"
                 >
-
             </div>
 
-
             <div>
-
-                <label>
-                    Criterio de control
-                </label>
+                <label>Criterio de control</label>
 
                 <select
                     name="propietario_${ownerCount}_criterio"
                 >
-
-                    <option value="">
-                        Seleccione
-                    </option>
-
-                    <option>
-                        a) Participación igual o superior al 25%
-                    </option>
-
-                    <option>
-                        b) Propiedad indirecta
-                    </option>
-
-                    <option>
-                        c) Control de decisiones
-                    </option>
-
-                    <option>
-                        d) Nombramiento de administradores
-                    </option>
-
-                    <option>
-                        e) Derechos de voto superiores al 50%
-                    </option>
-
-                    <option>
-                        f) Cargo directivo
-                    </option>
-
-                    <option>
-                        g) Otro medio de control
-                    </option>
-
-                    <option>
-                        h) Otro
-                    </option>
-
+                    <option value="">Seleccione</option>
+                    <option>a) Participación igual o superior al 25%</option>
+                    <option>b) Propiedad indirecta</option>
+                    <option>c) Control de decisiones</option>
+                    <option>d) Nombramiento de administradores</option>
+                    <option>e) Derechos de voto superiores al 50%</option>
+                    <option>f) Cargo directivo</option>
+                    <option>g) Otro medio de control</option>
+                    <option>h) Otro</option>
                 </select>
-
             </div>
 
         </div>
-
     `;
 
     container.appendChild(div);
 }
 
 
-/*
- * ================================================================
- * OBTENER DATOS DEL FORMULARIO
- * ================================================================
- */
+/* ================================================================
+   OBTENER DATOS
+   ================================================================ */
 
 function getFormData() {
 
@@ -2835,14 +2068,9 @@ function getFormData() {
 
     const data = {};
 
-    const elements =
-        form.querySelectorAll(
-            "input, select, textarea"
-        );
+    form.querySelectorAll("input, select, textarea").forEach(element => {
 
-    elements.forEach(element => {
-
-        if (!element.name) {
+        if (!element.name || element.type === "file") {
             return;
         }
 
@@ -2856,103 +2084,20 @@ function getFormData() {
                 data[element.name].push(element.value);
             }
 
-        } else if (element.type !== "file") {
+        } else {
 
             data[element.name] =
                 element.value;
-
         }
-
     });
 
     return data;
 }
 
 
-/*
- * ================================================================
- * GUARDAR BORRADOR
- * ================================================================
- */
-
-function saveDraft() {
-
-    const data =
-        getFormData();
-
-    localStorage.setItem(
-        "kycDraft",
-        JSON.stringify(data)
-    );
-
-    alert(
-        "Borrador guardado en este navegador."
-    );
-}
-
-
-/*
- * ================================================================
- * CARGAR BORRADOR
- * ================================================================
- */
-
-function loadDraft() {
-
-    const saved =
-        localStorage.getItem("kycDraft");
-
-    if (!saved) {
-        return;
-    }
-
-    try {
-
-        const data =
-            JSON.parse(saved);
-
-        Object.keys(data).forEach(name => {
-
-            const elements =
-                document.querySelectorAll(
-                    `[name="${name}"]`
-                );
-
-            elements.forEach(element => {
-
-                if (element.type === "checkbox") {
-
-                    element.checked =
-                        Array.isArray(data[name]) &&
-                        data[name].includes(element.value);
-
-                } else {
-
-                    element.value =
-                        data[name];
-
-                }
-
-            });
-
-        });
-
-    } catch (error) {
-
-        console.error(
-            "No fue posible cargar el borrador:",
-            error
-        );
-
-    }
-}
-
-
-/*
- * ================================================================
- * ESCAPAR HTML
- * ================================================================
- */
+/* ================================================================
+   ESCAPAR HTML
+   ================================================================ */
 
 function escapeHtml(text) {
 
@@ -2962,15 +2107,12 @@ function escapeHtml(text) {
         .replace(/>/g, "&gt;")
         .replace(/"/g, "&quot;")
         .replace(/'/g, "&#039;");
-
 }
 
 
-/*
- * ================================================================
- * LIMPIAR NOMBRE DE ARCHIVO
- * ================================================================
- */
+/* ================================================================
+   LIMPIAR NOMBRE DE ARCHIVO
+   ================================================================ */
 
 function sanitizeFileName(name) {
 
@@ -2980,22 +2122,12 @@ function sanitizeFileName(name) {
         .replace(/[^a-zA-Z0-9_-]/g, "_")
         .replace(/_+/g, "_")
         .substring(0, 80);
-
 }
 
 
-/*
- * ================================================================
- * CREAR HTML DEL WORD
- * ================================================================
- *
- * Esta función crea el contenido del documento Word.
- * NO lo descarga directamente.
- *
- * Eso permite utilizar exactamente el mismo documento tanto
- * para descargarlo como para enviarlo por email.
- *
- */
+/* ================================================================
+   CREAR HTML DEL WORD
+   ================================================================ */
 
 function createWordHtml(data) {
 
@@ -3005,11 +2137,8 @@ function createWordHtml(data) {
     let html = `
 
 <!DOCTYPE html>
-
 <html>
-
 <head>
-
 <meta charset="UTF-8">
 
 <style>
@@ -3036,10 +2165,6 @@ h2 {
     margin-top: 25px;
 }
 
-h3 {
-    color: #173b57;
-}
-
 table {
     width: 100%;
     border-collapse: collapse;
@@ -3064,14 +2189,11 @@ td:first-child {
 }
 
 </style>
-
 </head>
 
 <body>
 
-<h1>
-    CONOCIMIENTO DE LA EMPRESA (KYC)
-</h1>
+<h1>CONOCIMIENTO DE LA EMPRESA (KYC)</h1>
 
 <p>
     <strong>Empresa:</strong>
@@ -3079,78 +2201,27 @@ td:first-child {
 </p>
 
 
-<h2>
-    1. Datos Generales de la Empresa
-</h2>
+<h2>1. Datos Generales de la Empresa</h2>
 
 <table>
 
-<tr>
-    <td>Razón Social</td>
-    <td>${escapeHtml(data.razon_social)}</td>
-</tr>
-
-<tr>
-    <td>N.º Proveedor</td>
-    <td>${escapeHtml(data.numero_proveedor)}</td>
-</tr>
-
-<tr>
-    <td>Fecha de Constitución</td>
-    <td>${escapeHtml(data.fecha_constitucion)}</td>
-</tr>
-
-<tr>
-    <td>RFC / RUC / RUT / Tax ID</td>
-    <td>${escapeHtml(data.rfc)}</td>
-</tr>
-
-<tr>
-    <td>Tipo de empresa</td>
-    <td>${escapeHtml(data.tipo_empresa)}</td>
-</tr>
-
-<tr>
-    <td>Nacionalidad</td>
-    <td>${escapeHtml(data.nacionalidad_empresa)}</td>
-</tr>
-
-<tr>
-    <td>Calle y número</td>
-    <td>${escapeHtml(data.calle_empresa)}</td>
-</tr>
-
-<tr>
-    <td>Colonia / Distrito / Comuna</td>
-    <td>${escapeHtml(data.colonia_empresa)}</td>
-</tr>
-
-<tr>
-    <td>Ciudad</td>
-    <td>${escapeHtml(data.ciudad_empresa)}</td>
-</tr>
-
-<tr>
-    <td>Estado / Departamento / Provincia / Región</td>
-    <td>${escapeHtml(data.estado_empresa)}</td>
-</tr>
-
-<tr>
-    <td>Código Postal</td>
-    <td>${escapeHtml(data.codigo_postal_empresa)}</td>
-</tr>
-
-<tr>
-    <td>Página Web</td>
-    <td>${escapeHtml(data.pagina_web)}</td>
-</tr>
+<tr><td>Razón Social</td><td>${escapeHtml(data.razon_social)}</td></tr>
+<tr><td>N.º Proveedor</td><td>${escapeHtml(data.numero_proveedor)}</td></tr>
+<tr><td>Fecha de Constitución</td><td>${escapeHtml(data.fecha_constitucion)}</td></tr>
+<tr><td>RFC / RUC / RUT / Tax ID</td><td>${escapeHtml(data.rfc)}</td></tr>
+<tr><td>Tipo de empresa</td><td>${escapeHtml(data.tipo_empresa)}</td></tr>
+<tr><td>Nacionalidad</td><td>${escapeHtml(data.nacionalidad_empresa)}</td></tr>
+<tr><td>Calle y número</td><td>${escapeHtml(data.calle_empresa)}</td></tr>
+<tr><td>Colonia / Distrito / Comuna</td><td>${escapeHtml(data.colonia_empresa)}</td></tr>
+<tr><td>Ciudad</td><td>${escapeHtml(data.ciudad_empresa)}</td></tr>
+<tr><td>Estado / Departamento / Provincia / Región</td><td>${escapeHtml(data.estado_empresa)}</td></tr>
+<tr><td>Código Postal</td><td>${escapeHtml(data.codigo_postal_empresa)}</td></tr>
+<tr><td>Página Web</td><td>${escapeHtml(data.pagina_web)}</td></tr>
 
 </table>
 
 
-<h2>
-    2. Datos de la Persona de Contacto
-</h2>
+<h2>2. Datos de la Persona de Contacto</h2>
 
 <table>
 
@@ -3161,7 +2232,7 @@ td:first-child {
 
 <tr>
     <td>Teléfono / WhatsApp</td>
-    <td>${escapeHtml(data.contacto_telefono)}</td>
+    <td>${escapeHtml(data.contacto_codigo_pais)} ${escapeHtml(data.contacto_telefono)}</td>
 </tr>
 
 <tr>
@@ -3169,12 +2240,15 @@ td:first-child {
     <td>${escapeHtml(data.contacto_email)}</td>
 </tr>
 
+<tr>
+    <td>Cargo</td>
+    <td>${escapeHtml(data.cargo)}</td>
+</tr>
+
 </table>
 
 
-<h2>
-    3. Datos Bancarios
-</h2>
+<h2>3. Datos Bancarios</h2>
 
 <table>
 
@@ -3184,300 +2258,102 @@ td:first-child {
 </tr>
 
 <tr>
-    <td colspan="2">
-        <strong>Moneda Nacional (MXN)</strong>
-    </td>
+    <td colspan="2"><strong>Moneda Nacional (MXN)</strong></td>
 </tr>
 
-<tr>
-    <td>Banco</td>
-    <td>${escapeHtml(data.mn_banco)}</td>
-</tr>
+<tr><td>Banco</td><td>${escapeHtml(data.mn_banco)}</td></tr>
+<tr><td>Sucursal</td><td>${escapeHtml(data.mn_sucursal)}</td></tr>
+<tr><td>Calle y número</td><td>${escapeHtml(data.mn_calle)}</td></tr>
+<tr><td>Colonia</td><td>${escapeHtml(data.mn_colonia)}</td></tr>
+<tr><td>Ciudad y Estado</td><td>${escapeHtml(data.mn_ciudad_estado)}</td></tr>
+<tr><td>Código Postal</td><td>${escapeHtml(data.mn_cp)}</td></tr>
+<tr><td>N.º de Cuenta</td><td>${escapeHtml(data.mn_cuenta)}</td></tr>
+<tr><td>CLABE Interbancaria</td><td>${escapeHtml(data.mn_clabe)}</td></tr>
+<tr><td>Tipo de Cuenta</td><td>${escapeHtml(data.mn_tipo_cuenta)}</td></tr>
 
 <tr>
-    <td>Sucursal</td>
-    <td>${escapeHtml(data.mn_sucursal)}</td>
+    <td colspan="2"><strong>Moneda USD</strong></td>
 </tr>
 
-<tr>
-    <td>Calle y número</td>
-    <td>${escapeHtml(data.mn_calle)}</td>
-</tr>
-
-<tr>
-    <td>Colonia</td>
-    <td>${escapeHtml(data.mn_colonia)}</td>
-</tr>
-
-<tr>
-    <td>Ciudad y Estado</td>
-    <td>${escapeHtml(data.mn_ciudad_estado)}</td>
-</tr>
-
-<tr>
-    <td>Código Postal</td>
-    <td>${escapeHtml(data.mn_cp)}</td>
-</tr>
-
-<tr>
-    <td>N.º de Cuenta</td>
-    <td>${escapeHtml(data.mn_cuenta)}</td>
-</tr>
-
-<tr>
-    <td>CLABE Interbancaria</td>
-    <td>${escapeHtml(data.mn_clabe)}</td>
-</tr>
-
-<tr>
-    <td>Tipo de Cuenta</td>
-    <td>${escapeHtml(data.mn_tipo_cuenta)}</td>
-</tr>
-
-<tr>
-    <td colspan="2">
-        <strong>Moneda USD</strong>
-    </td>
-</tr>
-
-<tr>
-    <td>Banco</td>
-    <td>${escapeHtml(data.usd_banco)}</td>
-</tr>
-
-<tr>
-    <td>Sucursal</td>
-    <td>${escapeHtml(data.usd_sucursal)}</td>
-</tr>
-
-<tr>
-    <td>Calle y número</td>
-    <td>${escapeHtml(data.usd_calle)}</td>
-</tr>
-
-<tr>
-    <td>Colonia / Distrito / Comuna</td>
-    <td>${escapeHtml(data.usd_colonia)}</td>
-</tr>
-
-<tr>
-    <td>Ciudad y Estado</td>
-    <td>${escapeHtml(data.usd_ciudad_estado)}</td>
-</tr>
-
-<tr>
-    <td>País</td>
-    <td>${escapeHtml(data.usd_pais)}</td>
-</tr>
-
-<tr>
-    <td>Código Postal</td>
-    <td>${escapeHtml(data.usd_cp)}</td>
-</tr>
-
-<tr>
-    <td>N.º de Cuenta</td>
-    <td>${escapeHtml(data.usd_cuenta)}</td>
-</tr>
-
-<tr>
-    <td>ABA / SWIFT</td>
-    <td>${escapeHtml(data.usd_swift)}</td>
-</tr>
-
-<tr>
-    <td>Tipo de Cuenta</td>
-    <td>${escapeHtml(data.usd_tipo_cuenta)}</td>
-</tr>
+<tr><td>Banco</td><td>${escapeHtml(data.usd_banco)}</td></tr>
+<tr><td>Sucursal</td><td>${escapeHtml(data.usd_sucursal)}</td></tr>
+<tr><td>Calle y número</td><td>${escapeHtml(data.usd_calle)}</td></tr>
+<tr><td>Colonia / Distrito / Comuna</td><td>${escapeHtml(data.usd_colonia)}</td></tr>
+<tr><td>Ciudad y Estado</td><td>${escapeHtml(data.usd_ciudad_estado)}</td></tr>
+<tr><td>País</td><td>${escapeHtml(data.usd_pais)}</td></tr>
+<tr><td>Código Postal</td><td>${escapeHtml(data.usd_cp)}</td></tr>
+<tr><td>N.º de Cuenta</td><td>${escapeHtml(data.usd_cuenta)}</td></tr>
+<tr><td>ABA / SWIFT</td><td>${escapeHtml(data.usd_swift)}</td></tr>
+<tr><td>Tipo de Cuenta</td><td>${escapeHtml(data.usd_tipo_cuenta)}</td></tr>
 
 </table>
 
 
-<h2>
-    4. Datos del Representante Legal
-</h2>
+<h2>4. Datos del Representante Legal</h2>
 
 <table>
 
-<tr>
-    <td>Nombre completo</td>
-    <td>${escapeHtml(data.rep_nombre)}</td>
-</tr>
-
-<tr>
-    <td>Calle y número</td>
-    <td>${escapeHtml(data.rep_calle)}</td>
-</tr>
-
-<tr>
-    <td>Colonia / Distrito / Comuna</td>
-    <td>${escapeHtml(data.rep_colonia)}</td>
-</tr>
-
-<tr>
-    <td>Ciudad</td>
-    <td>${escapeHtml(data.rep_ciudad)}</td>
-</tr>
-
-<tr>
-    <td>Estado / Provincia / Región</td>
-    <td>${escapeHtml(data.rep_estado)}</td>
-</tr>
-
-<tr>
-    <td>Código Postal</td>
-    <td>${escapeHtml(data.rep_cp)}</td>
-</tr>
-
-<tr>
-    <td>Documento de Identidad</td>
-    <td>${escapeHtml(data.rep_documento)}</td>
-</tr>
-
-<tr>
-    <td>N.º de Pasaporte</td>
-    <td>${escapeHtml(data.rep_pasaporte)}</td>
-</tr>
+<tr><td>Nombre completo</td><td>${escapeHtml(data.rep_nombre)}</td></tr>
+<tr><td>Calle y número</td><td>${escapeHtml(data.rep_calle)}</td></tr>
+<tr><td>Colonia / Distrito / Comuna</td><td>${escapeHtml(data.rep_colonia)}</td></tr>
+<tr><td>Ciudad</td><td>${escapeHtml(data.rep_ciudad)}</td></tr>
+<tr><td>Estado / Provincia / Región</td><td>${escapeHtml(data.rep_estado)}</td></tr>
+<tr><td>Código Postal</td><td>${escapeHtml(data.rep_cp)}</td></tr>
+<tr><td>Documento de Identidad</td><td>${escapeHtml(data.rep_documento)}</td></tr>
+<tr><td>N.º de Pasaporte</td><td>${escapeHtml(data.rep_pasaporte)}</td></tr>
 
 <tr>
     <td>Tel. Celular</td>
-    <td>${escapeHtml(data.rep_tel_celular)}</td>
+    <td>${escapeHtml(data.rep_codigo_pais_celular)} ${escapeHtml(data.tel_celular)}</td>
 </tr>
 
 <tr>
     <td>Tel. Particular</td>
-    <td>${escapeHtml(data.rep_tel_particular)}</td>
+    <td>${escapeHtml(data.rep_codigo_pais_particular)} ${escapeHtml(data.tel_particular)}</td>
 </tr>
 
-<tr>
-    <td>Estado Civil</td>
-    <td>${escapeHtml(data.rep_estado_civil)}</td>
-</tr>
-
-<tr>
-    <td>Correo</td>
-    <td>${escapeHtml(data.rep_email)}</td>
-</tr>
-
-<tr>
-    <td>Lugar de Nacimiento</td>
-    <td>${escapeHtml(data.rep_lugar_nacimiento)}</td>
-</tr>
-
-<tr>
-    <td>Nacionalidad</td>
-    <td>${escapeHtml(data.rep_nacionalidad)}</td>
-</tr>
+<tr><td>Estado Civil</td><td>${escapeHtml(data.rep_estado_civil)}</td></tr>
+<tr><td>Correo</td><td>${escapeHtml(data.rep_email)}</td></tr>
+<tr><td>Lugar de Nacimiento</td><td>${escapeHtml(data.rep_lugar_nacimiento)}</td></tr>
+<tr><td>Nacionalidad</td><td>${escapeHtml(data.rep_nacionalidad)}</td></tr>
 
 </table>
 
 
-<h2>
-    5. Conocimiento de la Empresa
-</h2>
+<h2>5. Conocimiento de la Empresa</h2>
 
 <table>
 
-<tr>
-    <td>Actividad o giro de negocio</td>
-    <td>${escapeHtml(data.actividad)}</td>
-</tr>
-
-<tr>
-    <td>Descuento de facturas</td>
-    <td>${escapeHtml(data.descuento_facturas)}</td>
-</tr>
-
-<tr>
-    <td>Número de empleados</td>
-    <td>${escapeHtml(data.empleados)}</td>
-</tr>
-
-<tr>
-    <td>Total de ventas anuales MXN</td>
-    <td>${escapeHtml(data.ventas_mxn)}</td>
-</tr>
-
-<tr>
-    <td>Total de ventas anuales USD</td>
-    <td>${escapeHtml(data.ventas_usd)}</td>
-</tr>
-
-<tr>
-    <td>¿Requiere financiamiento?</td>
-    <td>${escapeHtml(data.requiere_financiamiento)}</td>
-</tr>
-
-<tr>
-    <td>¿Exporta sus productos?</td>
-    <td>${escapeHtml(data.exporta)}</td>
-</tr>
-
-<tr>
-    <td>Países de exportación</td>
-    <td>${escapeHtml(data.paises_exportacion)}</td>
-</tr>
-
-<tr>
-    <td>Monto aproximado de exportación</td>
-    <td>${escapeHtml(data.monto_exportacion)}</td>
-</tr>
-
-<tr>
-    <td>Localidad con menos de 50 mil habitantes</td>
-    <td>${escapeHtml(data.localidad_pequena)}</td>
-</tr>
-
-<tr>
-    <td>Localidades</td>
-    <td>${escapeHtml(data.localidades)}</td>
-</tr>
-
-<tr>
-    <td>Principales productos</td>
-    <td>${escapeHtml(data.productos)}</td>
-</tr>
-
-<tr>
-    <td>Principales clientes</td>
-    <td>${escapeHtml(data.clientes)}</td>
-</tr>
-
-<tr>
-    <td>Principales proveedores</td>
-    <td>${escapeHtml(data.proveedores)}</td>
-</tr>
+<tr><td>Actividad o giro de negocio</td><td>${escapeHtml(data.actividad)}</td></tr>
+<tr><td>Descuento de facturas</td><td>${escapeHtml(data.descuento_facturas)}</td></tr>
+<tr><td>Número de empleados</td><td>${escapeHtml(data.empleados)}</td></tr>
+<tr><td>Total de ventas anuales MXN</td><td>${escapeHtml(data.ventas_mxn)}</td></tr>
+<tr><td>Total de ventas anuales USD</td><td>${escapeHtml(data.ventas_usd)}</td></tr>
+<tr><td>¿Requiere financiamiento?</td><td>${escapeHtml(data.requiere_financiamiento)}</td></tr>
+<tr><td>¿Exporta sus productos?</td><td>${escapeHtml(data.exporta)}</td></tr>
+<tr><td>Países de exportación</td><td>${escapeHtml(data.paises_exportacion)}</td></tr>
+<tr><td>Monto aproximado de exportación</td><td>${escapeHtml(data.monto_exportacion)}</td></tr>
+<tr><td>Localidad con menos de 50 mil habitantes</td><td>${escapeHtml(data.localidad_pequena)}</td></tr>
+<tr><td>Localidades</td><td>${escapeHtml(data.localidades)}</td></tr>
+<tr><td>Principales productos</td><td>${escapeHtml(data.productos)}</td></tr>
+<tr><td>Principales clientes</td><td>${escapeHtml(data.clientes)}</td></tr>
+<tr><td>Principales proveedores</td><td>${escapeHtml(data.proveedores)}</td></tr>
 
 </table>
 
 
-<h2>
-    6. Origen de los Recursos
-</h2>
+<h2>6. Origen de los Recursos</h2>
 
 <table>
 
-<tr>
-    <td>Origen de los recursos</td>
-    <td>${escapeHtml(data.origen_recursos)}</td>
-</tr>
-
-<tr>
-    <td>Medio de recepción de los recursos</td>
-    <td>${escapeHtml(data.medio_recursos)}</td>
-</tr>
-
-<tr>
-    <td>Detalle</td>
-    <td>${escapeHtml(data.detalle_origen_recursos)}</td>
-</tr>
+<tr><td>Origen de los recursos</td><td>${escapeHtml(data.origen_recursos)}</td></tr>
+<tr><td>Medio de recepción de los recursos</td><td>${escapeHtml(data.medio_recursos)}</td></tr>
+<tr><td>Detalle</td><td>${escapeHtml(data.detalle_origen_recursos)}</td></tr>
 
 </table>
 
 
-<h2>
-    7. Conocimiento de la Empresa (KYC / AML)
-</h2>
+<h2>7. Cumplimiento y Prevención de Blanqueo de Capitales</h2>
 
 <table>
 
@@ -3486,45 +2362,18 @@ td:first-child {
     <td>${escapeHtml(data.figura_politica)}</td>
 </tr>
 
-<tr>
-    <td>Nombre</td>
-    <td>${escapeHtml(data.politico_nombre)}</td>
-</tr>
-
-<tr>
-    <td>Partido</td>
-    <td>${escapeHtml(data.politico_partido)}</td>
-</tr>
-
-<tr>
-    <td>Gobierno / Legislador</td>
-    <td>${escapeHtml(data.politico_cargo)}</td>
-</tr>
-
-<tr>
-    <td>Director General</td>
-    <td>${escapeHtml(data.director_general)}</td>
-</tr>
+<tr><td>Nombre</td><td>${escapeHtml(data.politico_nombre)}</td></tr>
+<tr><td>Partido</td><td>${escapeHtml(data.politico_partido)}</td></tr>
+<tr><td>Gobierno / Legislador</td><td>${escapeHtml(data.politico_cargo)}</td></tr>
+<tr><td>Director General</td><td>${escapeHtml(data.director_general)}</td></tr>
 
 </table>
 
 
-<h2>
-    8. Estructura Accionaria Actual
-</h2>
-
+<h2>8. Estructura Accionaria Actual</h2>
 `;
 
-
-    /*
-     * ACCIONISTAS DINÁMICOS
-     */
-
-    for (
-        let i = 1;
-        i <= shareholderCount;
-        i++
-    ) {
+    for (let i = 1; i <= shareholderCount; i++) {
 
         html += `
 
@@ -3538,64 +2387,39 @@ td:first-child {
 
 <tr>
     <td>Nombre completo</td>
-    <td>${escapeHtml(
-        data[`accionista_${i}_nombre`]
-    )}</td>
+    <td>${escapeHtml(data[`accionista_${i}_nombre`])}</td>
 </tr>
 
 <tr>
     <td>% de Participación</td>
-    <td>${escapeHtml(
-        data[`accionista_${i}_porcentaje`]
-    )}</td>
+    <td>${escapeHtml(data[`accionista_${i}_porcentaje`])}</td>
 </tr>
 
 <tr>
     <td>RFC con Homoclave</td>
-    <td>${escapeHtml(
-        data[`accionista_${i}_rfc`]
-    )}</td>
+    <td>${escapeHtml(data[`accionista_${i}_rfc`])}</td>
 </tr>
 
 <tr>
     <td>Nacionalidad</td>
-    <td>${escapeHtml(
-        data[`accionista_${i}_nacionalidad`]
-    )}</td>
+    <td>${escapeHtml(data[`accionista_${i}_nacionalidad`])}</td>
 </tr>
 
 <tr>
     <td>Género</td>
-    <td>${escapeHtml(
-        data[`accionista_${i}_genero`]
-    )}</td>
+    <td>${escapeHtml(data[`accionista_${i}_genero`])}</td>
 </tr>
 
 </table>
 
 `;
-
     }
 
-
     html += `
-
-<h2>
-    9. Mujeres en Cargos Directivos
-</h2>
-
+<h2>9. Mujeres en Cargos Directivos</h2>
 `;
 
-
-    /*
-     * MUJERES DINÁMICAS
-     */
-
-    for (
-        let i = 1;
-        i <= womanCount;
-        i++
-    ) {
+    for (let i = 1; i <= womanCount; i++) {
 
         html += `
 
@@ -3609,43 +2433,30 @@ td:first-child {
 
 <tr>
     <td>Cargo</td>
-    <td>${escapeHtml(
-        data[`cargo_mujer_${i}`]
-    )}</td>
+    <td>${escapeHtml(data[`cargo_mujer_${i}`])}</td>
 </tr>
 
 <tr>
     <td>Nombre y apellido</td>
-    <td>${escapeHtml(
-        data[`nombre_mujer_cargo_${i}`]
-    )}</td>
+    <td>${escapeHtml(data[`nombre_mujer_cargo_${i}`])}</td>
 </tr>
 
 </table>
 
 `;
-
     }
-
 
     html += `
 
-<h2>
-    10. Propietarios Reales
-</h2>
-
+<h2>10. Propietarios Reales</h2>
 `;
 
+    for (let i = 1; i <= ownerCount; i++) {
 
-    /*
-     * PROPIETARIOS REALES DINÁMICOS
-     */
-
-    for (
-        let i = 1;
-        i <= ownerCount;
-        i++
-    ) {
+        const nombre =
+            i === 1
+                ? data.propietario_1_nombre
+                : data[`propietario_${i}_nombre`];
 
         html += `
 
@@ -3659,72 +2470,64 @@ td:first-child {
 
 <tr>
     <td>Nombre completo</td>
-    <td>${escapeHtml(
-        data[`propietario_${i}_nombre`]
-    )}</td>
+    <td>${escapeHtml(nombre)}</td>
 </tr>
 
 <tr>
     <td>Criterio de control</td>
-    <td>${escapeHtml(
-        data[`propietario_${i}_criterio`]
-    )}</td>
-</tr>
-
-<tr>
-    <td>Tipo de persona física</td>
-    <td>${escapeHtml(
-        data[`propietario_${i}_tipo`]
-    )}</td>
-</tr>
-
-<tr>
-    <td>Género</td>
-    <td>${escapeHtml(
-        data[`propietario_${i}_genero`]
-    )}</td>
-</tr>
-
-<tr>
-    <td>Fecha de nacimiento</td>
-    <td>${escapeHtml(
-        data[`propietario_${i}_fecha_nacimiento`]
-    )}</td>
-</tr>
-
-<tr>
-    <td>País de nacimiento</td>
-    <td>${escapeHtml(
-        data[`propietario_${i}_pais_nacimiento`]
-    )}</td>
-</tr>
-
-<tr>
-    <td>Nacionalidad</td>
-    <td>${escapeHtml(
-        data[`propietario_${i}_nacionalidad`]
-    )}</td>
-</tr>
-
-<tr>
-    <td>Ocupación, profesión, actividad o giro del negocio</td>
-    <td>${escapeHtml(
-        data[`propietario_${i}_ocupacion`]
-    )}</td>
+    <td>${escapeHtml(data[`propietario_${i}_criterio`])}</td>
 </tr>
 
 </table>
 
 `;
-
     }
-
 
     html += `
 
-<h2>
-    11. Documentación para la Afiliación
-</h2>
+<h2>11. Datos del Propietario Real 1</h2>
+
+<table>
+
+<tr>
+    <td>Nombre Completo</td>
+    <td>${escapeHtml(data.propietario_1_nombre_completo)}</td>
+</tr>
+
+<tr>
+    <td>Tipo de persona física</td>
+    <td>${escapeHtml(data.propietario_1_tipo)}</td>
+</tr>
+
+<tr>
+    <td>Género</td>
+    <td>${escapeHtml(data.propietario_1_genero)}</td>
+</tr>
+
+<tr>
+    <td>Fecha de nacimiento</td>
+    <td>${escapeHtml(data.propietario_1_fecha_nacimiento)}</td>
+</tr>
+
+<tr>
+    <td>País de nacimiento</td>
+    <td>${escapeHtml(data.propietario_1_pais_nacimiento)}</td>
+</tr>
+
+<tr>
+    <td>Nacionalidad</td>
+    <td>${escapeHtml(data.propietario_1_nacionalidad)}</td>
+</tr>
+
+<tr>
+    <td>Ocupación, profesión, actividad o giro del negocio</td>
+    <td>${escapeHtml(data.propietario_1_ocupacion)}</td>
+</tr>
+
+</table>
+
+
+<h2>12. Documentación para la Afiliación</h2>
 
 <p>
     Los documentos seleccionados en el formulario se envían como archivos adjuntos al correo electrónico junto con este documento.
@@ -3734,157 +2537,106 @@ td:first-child {
 
 <tr>
     <td>RFC / RUC / RUT actualizado</td>
-    <td>${escapeHtml(
-        data._archivo_documento_rfc || ""
-    )}</td>
+    <td>${escapeHtml(data._archivo_documento_rfc)}</td>
 </tr>
 
 <tr>
     <td>Comprobante de domicilio fiscal</td>
-    <td>${escapeHtml(
-        data._archivo_documento_domicilio || ""
-    )}</td>
+    <td>${escapeHtml(data._archivo_documento_domicilio)}</td>
 </tr>
 
 <tr>
     <td>Identificación oficial del representante legal</td>
-    <td>${escapeHtml(
-        data._archivo_documento_identidad || ""
-    )}</td>
+    <td>${escapeHtml(data._archivo_documento_identidad)}</td>
 </tr>
 
 <tr>
     <td>Estado de cuenta bancario</td>
-    <td>${escapeHtml(
-        data._archivo_documento_banco || ""
-    )}</td>
+    <td>${escapeHtml(data._archivo_documento_banco)}</td>
 </tr>
 
 <tr>
     <td>Acta Constitutiva</td>
-    <td>${escapeHtml(
-        data._archivo_documento_constitutiva || ""
-    )}</td>
+    <td>${escapeHtml(data._archivo_documento_constitutiva)}</td>
 </tr>
 
 <tr>
     <td>Última Asamblea</td>
-    <td>${escapeHtml(
-        data._archivo_documento_asamblea || ""
-    )}</td>
+    <td>${escapeHtml(data._archivo_documento_asamblea)}</td>
 </tr>
 
 <tr>
     <td>Poderes del representante legal</td>
-    <td>${escapeHtml(
-        data._archivo_documento_poderes || ""
-    )}</td>
+    <td>${escapeHtml(data._archivo_documento_poderes)}</td>
 </tr>
 
 </table>
-
 
 <p class="small-note">
     Documento generado electrónicamente a partir del formulario KYC de eFactor Network.
 </p>
 
 </body>
-
 </html>
-
 `;
 
     return html;
 }
 
 
-/*
- * ================================================================
- * OBTENER ARCHIVOS DEL FORMULARIO
- * ================================================================
- */
+/* ================================================================
+   ARCHIVOS
+   ================================================================ */
 
 function getSelectedFiles() {
 
-    const form =
-        document.getElementById("kycForm");
-
-    const fileInputs =
-        form.querySelectorAll(
-            'input[type="file"]'
-        );
-
     const files = [];
 
-    fileInputs.forEach(input => {
+    document
+        .querySelectorAll('#kycForm input[type="file"]')
+        .forEach(input => {
 
-        for (
-            let i = 0;
-            i < input.files.length;
-            i++
-        ) {
+            Array.from(input.files).forEach(file => {
+                files.push(file);
+            });
 
-            files.push(
-                input.files[i]
-            );
-
-        }
-
-    });
+        });
 
     return files;
 }
 
 
-/*
- * ================================================================
- * ARCHIVO -> BASE64
- * ================================================================
- */
-
 function fileToBase64(file) {
 
-    return new Promise(
-        (resolve, reject) => {
+    return new Promise((resolve, reject) => {
 
-            const reader =
-                new FileReader();
+        const reader =
+            new FileReader();
 
-            reader.onload = function() {
+        reader.onload = () => {
 
-                const result =
-                    reader.result;
+            const result =
+                reader.result;
 
-                const base64 =
-                    result.split(",")[1];
+            resolve(
+                result.split(",")[1]
+            );
+        };
 
-                resolve(base64);
+        reader.onerror = () => {
 
-            };
+            reject(
+                new Error(
+                    "No fue posible leer el archivo: " +
+                    file.name
+                )
+            );
+        };
 
-            reader.onerror = function() {
-
-                reject(
-                    new Error(
-                        "No fue posible leer el archivo: " +
-                        file.name
-                    )
-                );
-
-            };
-
-            reader.readAsDataURL(file);
-
-        }
-    );
+        reader.readAsDataURL(file);
+    });
 }
 
-
-/*
- * ================================================================
- * HTML -> BASE64 UTF-8
- * ================================================================
- */
 
 function stringToBase64(text) {
 
@@ -3904,93 +2656,18 @@ function stringToBase64(text) {
         binary += String.fromCharCode(
             ...bytes.subarray(
                 i,
-                Math.min(
-                    i + chunkSize,
-                    bytes.length
-                )
+                Math.min(i + chunkSize, bytes.length)
             )
         );
-
     }
 
     return btoa(binary);
 }
 
 
-/*
- * ================================================================
- * GENERAR DOCUMENTO EDITABLE
- * ================================================================
- */
-
-function generateDocument() {
-
-    const form =
-        document.getElementById("kycForm");
-
-    if (!form.checkValidity()) {
-
-        form.reportValidity();
-
-        return;
-    }
-
-    const data =
-        getFormData();
-
-    const html =
-        createWordHtml(data);
-
-    const companyName =
-        data.razon_social || "Empresa";
-
-    const blob =
-        new Blob(
-            [html],
-            {
-                type:
-                    "application/msword"
-            }
-        );
-
-    const url =
-        URL.createObjectURL(blob);
-
-    const link =
-        document.createElement("a");
-
-    link.href = url;
-
-    link.download =
-        `KYC_${sanitizeFileName(companyName)}.doc`;
-
-    document.body.appendChild(link);
-
-    link.click();
-
-    document.body.removeChild(link);
-
-    setTimeout(
-        () => URL.revokeObjectURL(url),
-        1000
-    );
-
-}
-
-
-/*
- * ================================================================
- * ENVIAR FORMULARIO
- * ================================================================
- *
- * Envía:
- *
- * 1. Documento Word
- * 2. Todos los archivos seleccionados en type="file"
- *
- * en un único email.
- *
- */
+/* ================================================================
+   ENVIAR FORMULARIO
+   ================================================================ */
 
 async function sendForm() {
 
@@ -3998,14 +2675,7 @@ async function sendForm() {
         document.getElementById("kycForm");
 
     const button =
-        document.querySelector(
-            ".send-button"
-        );
-
-
-    /*
-     * VALIDAR FORMULARIO
-     */
+        document.querySelector(".send-button");
 
     if (!form.checkValidity()) {
 
@@ -4014,169 +2684,83 @@ async function sendForm() {
         return;
     }
 
-
-    /*
-     * COMPROBAR CONFIGURACIÓN
-     */
-
     if (
         !SCRIPT_URL ||
-        SCRIPT_URL.includes(
-            "PEGA_AQUI"
-        )
+        SCRIPT_URL.includes("PEGA_AQUI")
     ) {
 
         alert(
-            "El formulario todavía no está configurado para el envío por email.\n\n" +
-            "Debe colocar la URL de Google Apps Script en la variable SCRIPT_URL."
+            "El formulario todavía no está configurado para el envío por email."
         );
 
         return;
     }
 
-
-    /*
-     * CONFIRMAR QUE HAY CONEXIÓN
-     */
-
     button.disabled = true;
-
-    button.textContent =
-        "Preparando documentos...";
-
+    button.textContent = "Preparando documentos...";
 
     try {
 
         const data =
             getFormData();
 
-
         const companyName =
-            data.razon_social ||
-            "Empresa";
-
-
-        /*
-         * OBTENER NOMBRES DE LOS ARCHIVOS
-         *
-         * Se incluyen también dentro del Word.
-         */
+            data.razon_social || "Empresa";
 
         const selectedFiles =
             getSelectedFiles();
 
+        /* Nombres de archivos para incluirlos también en el Word */
 
-        const fileNames = {};
+        document
+            .querySelectorAll('#kycForm input[type="file"]')
+            .forEach(input => {
 
-        const formFileInputs =
-            form.querySelectorAll(
-                'input[type="file"]'
-            );
+                if (input.files.length > 0) {
 
-
-        formFileInputs.forEach(input => {
-
-            if (input.files.length > 0) {
-
-                const names = [];
-
-                for (
-                    let i = 0;
-                    i < input.files.length;
-                    i++
-                ) {
-
-                    names.push(
-                        input.files[i].name
-                    );
-
+                    data[`_archivo_${input.name}`] =
+                        Array.from(input.files)
+                            .map(file => file.name)
+                            .join(", ");
                 }
-
-                fileNames[
-                    `_archivo_${input.name}`
-                ] =
-                    names.join(", ");
-
-            }
-
-        });
+            });
 
 
-        /*
-         * Añadir nombres de archivos a los datos
-         * antes de generar el Word.
-         */
-
-        Object.keys(fileNames).forEach(
-            key => {
-
-                data[key] =
-                    fileNames[key];
-
-            }
-        );
-
-
-        /*
-         * CREAR WORD
-         */
+        /* Crear Word */
 
         button.textContent =
             "Preparando Word...";
 
-
         const wordHtml =
             createWordHtml(data);
 
-
         const wordBase64 =
-            stringToBase64(
-                wordHtml
-            );
+            stringToBase64(wordHtml);
 
 
-        /*
-         * PREPARAR ADJUNTOS
-         */
+        /* Preparar archivos */
 
         button.textContent =
             "Preparando archivos...";
 
-
         const attachments = [];
 
-
-        for (
-            let i = 0;
-            i < selectedFiles.length;
-            i++
-        ) {
-
-            const file =
-                selectedFiles[i];
+        for (const file of selectedFiles) {
 
             const base64 =
                 await fileToBase64(file);
 
-
             attachments.push({
-
                 name: file.name,
-
                 type:
                     file.type ||
                     "application/octet-stream",
-
                 data: base64
-
             });
-
         }
 
 
-        /*
-         * CREAR PAYLOAD
-         */
+        /* Payload */
 
         const payload = {
 
@@ -4196,62 +2780,40 @@ async function sendForm() {
 
                 data:
                     wordBase64
-
             },
 
             files:
                 attachments
-
         };
 
 
-        /*
-         * ENVIAR
-         */
+        /* Enviar */
 
         button.textContent =
             "Enviando formulario...";
 
-
         await fetch(
             SCRIPT_URL,
             {
-
                 method: "POST",
-
                 mode: "no-cors",
-
                 headers: {
-
                     "Content-Type":
                         "text/plain;charset=utf-8"
-
                 },
-
                 body:
                     JSON.stringify(payload)
-
             }
         );
 
-
-        /*
-         * ÉXITO
-         *
-         * Con mode:no-cors el navegador no permite leer
-         * la respuesta del servidor, pero el POST sí se envía.
-         */
-
         button.textContent =
             "Formulario enviado";
-
 
         alert(
             "El formulario se ha enviado correctamente.\n\n" +
             "El documento Word y todos los documentos adjuntos " +
             "han sido enviados en el mismo email."
         );
-
 
     } catch (error) {
 
@@ -4260,45 +2822,187 @@ async function sendForm() {
             error
         );
 
-
         button.disabled = false;
 
         button.textContent =
             "Enviar formulario";
 
-
         alert(
             "No ha sido posible enviar el formulario.\n\n" +
             "Por favor, inténtelo nuevamente."
         );
-
     }
-
 }
 
 
-/*
- * ================================================================
- * INICIALIZACIÓN
- * ================================================================
- */
+/* ================================================================
+   TOOLTIPS
+   ================================================================ */
 
-window.addEventListener(
-    "load",
-    function() {
+function positionMobileTooltip(icon, tooltip) {
 
-        loadDraft();
-
-        mostrarDatosBancarios();
-
-        toggleExportacion();
-
-        toggleLocalidad();
-
-        toggleFiguraPolitica();
-
+    if (window.innerWidth > 700) {
+        return;
     }
-);
+
+    const rect =
+        icon.getBoundingClientRect();
+
+    const margin = 15;
+    const gap = 10;
+
+    const tooltipHeight =
+        Math.min(
+            tooltip.scrollHeight,
+            window.innerHeight * 0.60
+        );
+
+    let top =
+        rect.top - tooltipHeight - gap;
+
+    if (top < margin) {
+        top =
+            rect.bottom + gap;
+    }
+
+    if (
+        top + tooltipHeight >
+        window.innerHeight - margin
+    ) {
+        top =
+            window.innerHeight -
+            tooltipHeight -
+            margin;
+    }
+
+    tooltip.style.top =
+        `${Math.max(margin, top)}px`;
+}
+
+
+function closeAllTooltips(except = null) {
+
+    document
+        .querySelectorAll(".info-icon.active")
+        .forEach(icon => {
+
+            if (icon !== except) {
+                icon.classList.remove("active");
+
+                const tooltip =
+                    icon.querySelector(".tooltip");
+
+                if (tooltip) {
+                    tooltip.style.top = "";
+                }
+            }
+        });
+}
+
+
+document
+    .querySelectorAll(".info-icon")
+    .forEach(icon => {
+
+        const tooltip =
+            icon.querySelector(".tooltip");
+
+        if (!tooltip) {
+            return;
+        }
+
+        icon.addEventListener("click", event => {
+
+            event.stopPropagation();
+
+            const isActive =
+                icon.classList.contains("active");
+
+            closeAllTooltips(icon);
+
+            if (!isActive) {
+
+                icon.classList.add("active");
+
+                requestAnimationFrame(() => {
+                    positionMobileTooltip(
+                        icon,
+                        tooltip
+                    );
+                });
+            } else {
+
+                icon.classList.remove("active");
+                tooltip.style.top = "";
+            }
+        });
+
+
+        icon.addEventListener("keydown", event => {
+
+            if (
+                event.key === "Enter" ||
+                event.key === " "
+            ) {
+
+                event.preventDefault();
+
+                icon.click();
+            }
+
+            if (event.key === "Escape") {
+                closeAllTooltips();
+            }
+        });
+    });
+
+
+document.addEventListener("click", () => {
+    closeAllTooltips();
+});
+
+
+document.addEventListener("keydown", event => {
+
+    if (event.key === "Escape") {
+        closeAllTooltips();
+    }
+});
+
+
+window.addEventListener("resize", () => {
+
+    const activeIcon =
+        document.querySelector(".info-icon.active");
+
+    if (!activeIcon) {
+        return;
+    }
+
+    const tooltip =
+        activeIcon.querySelector(".tooltip");
+
+    if (tooltip) {
+        positionMobileTooltip(
+            activeIcon,
+            tooltip
+        );
+    }
+});
+
+
+/* ================================================================
+   INICIALIZACIÓN
+   ================================================================ */
+
+window.addEventListener("DOMContentLoaded", () => {
+
+    mostrarDatosBancarios();
+    toggleExportacion();
+    toggleLocalidad();
+    toggleFiguraPolitica();
+
+});
 
 </script>
 
